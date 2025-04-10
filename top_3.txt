@@ -1,0 +1,819 @@
+
+=== Matches ===
+
+Top 3 highest:
+
+Alex Iwobi (Fulham): 31
+André Onana (Manchester Utd): 31
+Anthony Elanga (Nott'ham Forest): 31
+Top 3 lowest:
+
+Ayden Heaven (Manchester Utd): 2
+Ben Godfrey (Ipswich Town): 2
+Billy Gilmour (Brighton): 2
+
+=== Playing_Time_Starts ===
+
+Top 3 highest:
+
+André Onana (Manchester Utd): 31
+Bernd Leno (Fulham): 31
+Bryan Mbeumo (Brentford): 31
+Top 3 lowest:
+
+Ali Al Hamadi (Ipswich Town): 0
+Antony (Manchester Utd): 0
+Ben Chilwell (Crystal Palace): 0
+
+=== Minutes ===
+
+Top 3 highest:
+
+André Onana (Manchester Utd): 2790.0
+Bernd Leno (Fulham): 2790.0
+David Raya (Arsenal): 2790.0
+Top 3 lowest:
+
+Harrison Reed (Fulham): 93.0
+Ayden Heaven (Manchester Utd): 95.0
+Jahmai Simpson-Pusey (Manchester City): 96.0
+
+=== Performance_Gls ===
+
+Top 3 highest:
+
+Mohamed Salah (Liverpool): 27
+Erling Haaland (Manchester City): 21
+Alexander Isak (Newcastle Utd): 20
+Top 3 lowest:
+
+Aaron Cresswell (West Ham): 0
+Aaron Ramsdale (Southampton): 0
+Abdukodir Khusanov (Manchester City): 0
+
+=== Performance_Ast ===
+
+Top 3 highest:
+
+Mohamed Salah (Liverpool): 17
+Antonee Robinson (Fulham): 10
+Bukayo Saka (Arsenal): 10
+Top 3 lowest:
+
+Aaron Cresswell (West Ham): 0
+Aaron Ramsdale (Southampton): 0
+Abdukodir Khusanov (Manchester City): 0
+
+=== Yellow_Cards ===
+
+Top 3 highest:
+
+Saša Lukić (Fulham): 12
+Flynn Downes (Southampton): 10
+João Gomes (Wolves): 10
+Top 3 lowest:
+
+Abdul Fatawu Issahaku (Leicester City): 0
+Adam Webster (Brighton): 0
+Albert Grønbaek (Southampton): 0
+
+=== Red_Cards ===
+
+Top 3 highest:
+
+Bruno Fernandes (Manchester Utd): 2
+Jack Stephens (Southampton): 2
+Myles Lewis-Skelly (Arsenal): 2
+Top 3 lowest:
+
+Aaron Cresswell (West Ham): 0
+Aaron Ramsdale (Southampton): 0
+Aaron Wan-Bissaka (West Ham): 0
+
+=== Expected_xG ===
+
+Top 3 highest:
+
+Mohamed Salah (Liverpool): 22.5
+Erling Haaland (Manchester City): 20.8
+Alexander Isak (Newcastle Utd): 16.3
+Top 3 lowest:
+
+Aaron Ramsdale (Southampton): 0.0
+Abdukodir Khusanov (Manchester City): 0.0
+Adam Webster (Brighton): 0.0
+
+=== Expected_xAG ===
+
+Top 3 highest:
+
+Mohamed Salah (Liverpool): 11.3
+Cole Palmer (Chelsea): 9.1
+Son Heung-min (Tottenham): 8.2
+Top 3 lowest:
+
+Aaron Ramsdale (Southampton): 0.0
+Albert Grønbaek (Southampton): 0.0
+Alex McCarthy (Southampton): 0.0
+
+=== Progression_PrgC ===
+
+Top 3 highest:
+
+Jeremy Doku (Manchester City): 166
+Kaoru Mitoma (Brighton): 135
+Sávio (Manchester City): 129
+Top 3 lowest:
+
+Aaron Ramsdale (Southampton): 0
+Alex McCarthy (Southampton): 0
+Alex Palmer (Ipswich Town): 0
+
+=== Progression_PrgP ===
+
+Top 3 highest:
+
+Bruno Fernandes (Manchester Utd): 251
+Joško Gvardiol (Manchester City): 218
+Bruno Guimarães (Newcastle Utd): 212
+Top 3 lowest:
+
+Aaron Ramsdale (Southampton): 0
+Alex McCarthy (Southampton): 0
+Alisson (Liverpool): 0
+
+=== Progression_PrgR ===
+
+Top 3 highest:
+
+Mohamed Salah (Liverpool): 384
+Bryan Mbeumo (Brentford): 287
+Kaoru Mitoma (Brighton): 274
+Top 3 lowest:
+
+Aaron Ramsdale (Southampton): 0
+Alex McCarthy (Southampton): 0
+Alex Palmer (Ipswich Town): 0
+
+=== Per_90_Minutes_Gls ===
+
+Top 3 highest:
+
+Ryan Sessegnon (Fulham): 1.41
+James Mcatee (Manchester City): 1.26
+Jáder Durán (Aston Villa): 0.99
+Top 3 lowest:
+
+Aaron Cresswell (West Ham): 0.0
+Aaron Ramsdale (Southampton): 0.0
+Abdukodir Khusanov (Manchester City): 0.0
+
+=== Per_90_Minutes_Ast ===
+
+Top 3 highest:
+
+Bukayo Saka (Arsenal): 0.67
+Danny Ings (West Ham): 0.63
+Marcus Rashford (Aston Villa): 0.61
+Top 3 lowest:
+
+Aaron Cresswell (West Ham): 0.0
+Aaron Ramsdale (Southampton): 0.0
+Abdukodir Khusanov (Manchester City): 0.0
+
+=== Per_90_Minutes_xG ===
+
+Top 3 highest:
+
+James Mcatee (Manchester City): 0.87
+Erling Haaland (Manchester City): 0.76
+Mohamed Salah (Liverpool): 0.74
+Top 3 lowest:
+
+Aaron Ramsdale (Southampton): 0.0
+Abdukodir Khusanov (Manchester City): 0.0
+Adam Webster (Brighton): 0.0
+
+=== Per_90_Minutes_xAG ===
+
+Top 3 highest:
+
+Kieran Tierney (Arsenal): 0.76
+Marcus Rashford (Aston Villa): 0.6
+Mykhailo Mudryk (Chelsea): 0.58
+Top 3 lowest:
+
+Aaron Ramsdale (Southampton): 0.0
+Alex McCarthy (Southampton): 0.0
+Alex Palmer (Ipswich Town): 0.0
+
+=== Shots_On_Target_Per90 ===
+
+Top 3 highest:
+
+Julio Enciso (Brighton): 3.37
+Ryan Sessegnon (Fulham): 2.36
+Donyell Malen (Aston Villa): 2.31
+Top 3 lowest:
+
+Aaron Cresswell (West Ham): 0.0
+Aaron Ramsdale (Southampton): 0.0
+Abdukodir Khusanov (Manchester City): 0.0
+
+=== Total_Passes_Completed ===
+
+Top 3 highest:
+
+Virgil van Dijk (Liverpool): 2230
+Joško Gvardiol (Manchester City): 1983
+Levi Colwill (Chelsea): 1955
+Top 3 lowest:
+
+Albert Grønbaek (Southampton): 13
+Odsonne Édouard (Crystal Palace): 17
+Callum Wilson (Newcastle Utd): 23
+
+=== Total_Passes_Completed_Percentage ===
+
+Top 3 highest:
+
+Wataru Endo (Liverpool): 94.0
+Manuel Akanji (Manchester City): 93.9
+Nathan Aké (Manchester City): 93.9
+Top 3 lowest:
+
+Matz Sels (Nott'ham Forest): 50.6
+George Hirst (Ipswich Town): 54.1
+Beto (Everton): 57.8
+
+=== Total_Passing_Distance ===
+
+Top 3 highest:
+
+Virgil van Dijk (Liverpool): 40386
+Levi Colwill (Chelsea): 35488
+Jan Paul van Hecke (Brighton): 34428
+Top 3 lowest:
+
+Albert Grønbaek (Southampton): 135
+Odsonne Édouard (Crystal Palace): 230
+Ali Al Hamadi (Ipswich Town): 278
+
+=== Short_Passe_Completed_Percentage ===
+
+Top 3 highest:
+
+Aaron Ramsdale (Southampton): 100.0
+Antonín Kinský (Tottenham): 100.0
+Arijanet Muric (Ipswich Town): 100.0
+Top 3 lowest:
+
+Paul Onuachu (Southampton): 63.0
+George Hirst (Ipswich Town): 67.4
+Rodrigo Muniz (Fulham): 67.7
+
+=== Medium_Passes_Completed_Percentage ===
+
+Top 3 highest:
+
+Alex Palmer (Ipswich Town): 100.0
+Caoimhín Kelleher (Liverpool): 100.0
+Danny Ward (Leicester City): 100.0
+Top 3 lowest:
+
+George Hirst (Ipswich Town): 40.0
+Albert Grønbaek (Southampton): 50.0
+Beto (Everton): 50.9
+
+=== Keypasses ===
+
+Top 3 highest:
+
+Bruno Fernandes (Manchester Utd): 75
+Cole Palmer (Chelsea): 71
+Mohamed Salah (Liverpool): 70
+Top 3 lowest:
+
+Aaron Ramsdale (Southampton): 0
+Alex McCarthy (Southampton): 0
+Alphonse Areola (West Ham): 0
+
+=== Passes_Into_Final_Third ===
+
+Top 3 highest:
+
+Virgil van Dijk (Liverpool): 236
+Moisés Caicedo (Chelsea): 194
+Youri Tielemans (Aston Villa): 190
+Top 3 lowest:
+
+Ali Al Hamadi (Ipswich Town): 0
+Chiedozie Ogbene (Ipswich Town): 0
+Evan Ferguson (West Ham): 0
+
+=== Passes_Into_Penalty_Area ===
+
+Top 3 highest:
+
+Mohamed Salah (Liverpool): 74
+Alex Iwobi (Fulham): 68
+Martin Ødegaard (Arsenal): 63
+Top 3 lowest:
+
+Abdukodir Khusanov (Manchester City): 0
+Albert Grønbaek (Southampton): 0
+Alex McCarthy (Southampton): 0
+
+=== Crossed_Into_Penalty_Area ===
+
+Top 3 highest:
+
+Antonee Robinson (Fulham): 26
+Pedro Porro (Tottenham): 22
+Milos Kerkez (Bournemouth): 20
+Top 3 lowest:
+
+Aaron Ramsdale (Southampton): 0
+Abdoulaye Doucouré (Everton): 0
+Abdukodir Khusanov (Manchester City): 0
+
+=== Progressive_Passes ===
+
+Top 3 highest:
+
+Bruno Fernandes (Manchester Utd): 251
+Joško Gvardiol (Manchester City): 218
+Bruno Guimarães (Newcastle Utd): 212
+Top 3 lowest:
+
+Aaron Ramsdale (Southampton): 0
+Alex McCarthy (Southampton): 0
+Alisson (Liverpool): 0
+
+=== Shot_Creating_Actions ===
+
+Top 3 highest:
+
+Cole Palmer (Chelsea): 159
+Bruno Fernandes (Manchester Utd): 153
+Mohamed Salah (Liverpool): 135
+Top 3 lowest:
+
+Alex McCarthy (Southampton): 0
+Ben Mee (Brentford): 0
+Benoît Badiashile (Chelsea): 0
+
+=== Shot_Creating_Actions_Per90 ===
+
+Top 3 highest:
+
+Philip Billing (Bournemouth): 7.83
+Luis Guilherme (West Ham): 7.43
+Bukayo Saka (Arsenal): 6.19
+Top 3 lowest:
+
+Alex McCarthy (Southampton): 0.0
+Ben Mee (Brentford): 0.0
+Benoît Badiashile (Chelsea): 0.0
+
+=== Goal_Creating_Actions ===
+
+Top 3 highest:
+
+Mohamed Salah (Liverpool): 23
+Bukayo Saka (Arsenal): 21
+Mikkel Damsgaard (Brentford): 18
+Top 3 lowest:
+
+Aaron Cresswell (West Ham): 0
+Aaron Ramsdale (Southampton): 0
+Abdukodir Khusanov (Manchester City): 0
+
+=== Goal_Creating_Actions_Per90 ===
+
+Top 3 highest:
+
+Bukayo Saka (Arsenal): 1.41
+Harvey Elliott (Liverpool): 1.1
+Mikey Moore (Tottenham): 0.97
+Top 3 lowest:
+
+Aaron Cresswell (West Ham): 0.0
+Aaron Ramsdale (Southampton): 0.0
+Abdukodir Khusanov (Manchester City): 0.0
+
+=== Tackles ===
+
+Top 3 highest:
+
+Idrissa Gana Gueye (Everton): 115
+Daniel Muñoz (Crystal Palace): 97
+Noussair Mazraoui (Manchester Utd): 92
+Top 3 lowest:
+
+Aaron Ramsdale (Southampton): 0
+Alex McCarthy (Southampton): 0
+Alex Palmer (Ipswich Town): 0
+
+=== Tackles_Won ===
+
+Top 3 highest:
+
+Idrissa Gana Gueye (Everton): 69
+Daniel Muñoz (Crystal Palace): 64
+Moisés Caicedo (Chelsea): 57
+Top 3 lowest:
+
+Aaron Ramsdale (Southampton): 0
+Alex McCarthy (Southampton): 0
+Alex Palmer (Ipswich Town): 0
+
+=== Defensive_Actions_Attempted ===
+
+Top 3 highest:
+
+Trent Alexander-Arnold (Liverpool): 99
+Elliot Anderson (Nott'ham Forest): 89
+Alexis Mac Allister (Liverpool): 87
+Top 3 lowest:
+
+Alex McCarthy (Southampton): 0
+Alex Palmer (Ipswich Town): 0
+Armando Broja (Everton): 0
+
+=== Defensive_Actions_Lost ===
+
+Top 3 highest:
+
+Trent Alexander-Arnold (Liverpool): 53
+João Gomes (Wolves): 51
+Elliot Anderson (Nott'ham Forest): 49
+Top 3 lowest:
+
+Alex McCarthy (Southampton): 0
+Alex Palmer (Ipswich Town): 0
+Antonín Kinský (Tottenham): 0
+
+=== Blocks ===
+
+Top 3 highest:
+
+Nathan Collins (Brentford): 66
+Murillo (Nott'ham Forest): 63
+James Tarkowski (Everton): 56
+Top 3 lowest:
+
+Aaron Ramsdale (Southampton): 0
+Alex McCarthy (Southampton): 0
+Alex Palmer (Ipswich Town): 0
+
+=== Shots_Blocked ===
+
+Top 3 highest:
+
+Nathan Collins (Brentford): 47
+Dara O'Shea (Ipswich Town): 43
+James Tarkowski (Everton): 41
+Top 3 lowest:
+
+Aaron Ramsdale (Southampton): 0
+Abdul Fatawu Issahaku (Leicester City): 0
+Adama Traoré (Fulham): 0
+
+=== Passes_Blocked ===
+
+Top 3 highest:
+
+Alexis Mac Allister (Liverpool): 49
+Antoine Semenyo (Bournemouth): 47
+Tyrick Mitchell (Crystal Palace): 44
+Top 3 lowest:
+
+Aaron Ramsdale (Southampton): 0
+Albert Grønbaek (Southampton): 0
+Alex McCarthy (Southampton): 0
+
+=== Interceptions ===
+
+Top 3 highest:
+
+Antonee Robinson (Fulham): 53
+Ryan Gravenberch (Liverpool): 53
+Aaron Wan-Bissaka (West Ham): 52
+Top 3 lowest:
+
+Albert Grønbaek (Southampton): 0
+Alex McCarthy (Southampton): 0
+Alex Palmer (Ipswich Town): 0
+
+=== Touches ===
+
+Top 3 highest:
+
+Virgil van Dijk (Liverpool): 2740
+Joško Gvardiol (Manchester City): 2505
+Levi Colwill (Chelsea): 2406
+Top 3 lowest:
+
+Albert Grønbaek (Southampton): 38
+Odsonne Édouard (Crystal Palace): 45
+Ali Al Hamadi (Ipswich Town): 53
+
+=== Touches_Defensive_Penalty_Area ===
+
+Top 3 highest:
+
+Mark Flekken (Brentford): 1184
+Bernd Leno (Fulham): 972
+André Onana (Manchester Utd): 951
+Top 3 lowest:
+
+Emi Buendía (Aston Villa): 0
+Mathys Tel (Tottenham): 0
+Callum Wilson (Newcastle Utd): 1
+
+=== Touches_Def_3rd ===
+
+Top 3 highest:
+
+Mark Flekken (Brentford): 1471
+Jordan Pickford (Everton): 1315
+André Onana (Manchester Utd): 1235
+Top 3 lowest:
+
+Odsonne Édouard (Crystal Palace): 4
+Callum Wilson (Newcastle Utd): 5
+Donyell Malen (Aston Villa): 5
+
+=== Touches_Mid_3rd ===
+
+Top 3 highest:
+
+Virgil van Dijk (Liverpool): 1519
+Moisés Caicedo (Chelsea): 1316
+William Saliba (Arsenal): 1277
+Top 3 lowest:
+
+Alex McCarthy (Southampton): 0
+Danny Ward (Leicester City): 0
+Fraser Forster (Tottenham): 0
+
+=== Touches_Att_3rd ===
+
+Top 3 highest:
+
+Mohamed Salah (Liverpool): 911
+Bruno Fernandes (Manchester Utd): 811
+Bryan Mbeumo (Brentford): 798
+Top 3 lowest:
+
+Aaron Ramsdale (Southampton): 0
+Alex McCarthy (Southampton): 0
+Alex Palmer (Ipswich Town): 0
+
+=== Touches_Att_Pen ===
+
+Top 3 highest:
+
+Mohamed Salah (Liverpool): 291
+Erling Haaland (Manchester City): 170
+Antoine Semenyo (Bournemouth): 169
+Top 3 lowest:
+
+Aaron Ramsdale (Southampton): 0
+Alex McCarthy (Southampton): 0
+Alex Palmer (Ipswich Town): 0
+
+=== Take_Ons_Attempted ===
+
+Top 3 highest:
+
+Mohammed Kudus (West Ham): 169
+Jeremy Doku (Manchester City): 166
+Morgan Rogers (Aston Villa): 136
+Top 3 lowest:
+
+Aaron Ramsdale (Southampton): 0
+Alex McCarthy (Southampton): 0
+Alex Palmer (Ipswich Town): 0
+
+=== Carries ===
+
+Top 3 highest:
+
+Joško Gvardiol (Manchester City): 1605
+Virgil van Dijk (Liverpool): 1550
+Jan Paul van Hecke (Brighton): 1471
+Top 3 lowest:
+
+Albert Grønbaek (Southampton): 18
+Odsonne Édouard (Crystal Palace): 23
+Kieran Tierney (Arsenal): 24
+
+=== Total_Carrying_Distance ===
+
+Top 3 highest:
+
+Jan Paul van Hecke (Brighton): 9213
+Joško Gvardiol (Manchester City): 8403
+Virgil van Dijk (Liverpool): 7564
+Top 3 lowest:
+
+Albert Grønbaek (Southampton): 79
+Harrison Reed (Fulham): 95
+Kosta Nedeljković (Aston Villa): 101
+
+=== Progressive_Carrying_Distance ===
+
+Top 3 highest:
+
+Jan Paul van Hecke (Brighton): 6356
+Joško Gvardiol (Manchester City): 4655
+Rúben Dias (Manchester City): 4343
+Top 3 lowest:
+
+Albert Grønbaek (Southampton): 15
+Massimo Luongo (Ipswich Town): 25
+Harrison Reed (Fulham): 27
+
+=== Progressive_Carries ===
+
+Top 3 highest:
+
+Jeremy Doku (Manchester City): 166
+Kaoru Mitoma (Brighton): 135
+Sávio (Manchester City): 129
+Top 3 lowest:
+
+Aaron Ramsdale (Southampton): 0
+Alex McCarthy (Southampton): 0
+Alex Palmer (Ipswich Town): 0
+
+=== Carries_Into_Final_Third ===
+
+Top 3 highest:
+
+Alex Iwobi (Fulham): 90
+Joško Gvardiol (Manchester City): 88
+Jeremy Doku (Manchester City): 77
+Top 3 lowest:
+
+Aaron Ramsdale (Southampton): 0
+Albert Grønbaek (Southampton): 0
+Alex McCarthy (Southampton): 0
+
+=== Carries_Into_Penalty_Area ===
+
+Top 3 highest:
+
+Mohamed Salah (Liverpool): 104
+Jeremy Doku (Manchester City): 77
+Sávio (Manchester City): 73
+Top 3 lowest:
+
+Aaron Cresswell (West Ham): 0
+Aaron Ramsdale (Southampton): 0
+Abdukodir Khusanov (Manchester City): 0
+
+=== Miscontrols ===
+
+Top 3 highest:
+
+Mohamed Salah (Liverpool): 98
+Liam Delap (Ipswich Town): 92
+Morgan Rogers (Aston Villa): 88
+Top 3 lowest:
+
+Alex McCarthy (Southampton): 0
+Alphonse Areola (West Ham): 0
+Antonín Kinský (Tottenham): 0
+
+=== Dispossessions ===
+
+Top 3 highest:
+
+Mohammed Kudus (West Ham): 79
+Bruno Guimarães (Newcastle Utd): 69
+Dejan Kulusevski (Tottenham): 69
+Top 3 lowest:
+
+Aaron Cresswell (West Ham): 0
+Aaron Ramsdale (Southampton): 0
+Alex McCarthy (Southampton): 0
+
+=== Receiving ===
+
+Top 3 highest:
+
+Virgil van Dijk (Liverpool): 1882
+Joško Gvardiol (Manchester City): 1821
+Levi Colwill (Chelsea): 1766
+Top 3 lowest:
+
+Albert Grønbaek (Southampton): 21
+Odsonne Édouard (Crystal Palace): 26
+Neto (Bournemouth): 28
+
+=== Progressive_Receiving ===
+
+Top 3 highest:
+
+Mohamed Salah (Liverpool): 384
+Bryan Mbeumo (Brentford): 287
+Kaoru Mitoma (Brighton): 274
+Top 3 lowest:
+
+Aaron Ramsdale (Southampton): 0
+Alex McCarthy (Southampton): 0
+Alex Palmer (Ipswich Town): 0
+
+=== Fouls ===
+
+Top 3 highest:
+
+Liam Delap (Ipswich Town): 63
+Antoine Semenyo (Bournemouth): 62
+João Gomes (Wolves): 59
+Top 3 lowest:
+
+Albert Grønbaek (Southampton): 0
+Alex McCarthy (Southampton): 0
+Alisson (Liverpool): 0
+
+=== Fouled ===
+
+Top 3 highest:
+
+Bruno Guimarães (Newcastle Utd): 93
+James Maddison (Tottenham): 59
+John McGinn (Aston Villa): 59
+Top 3 lowest:
+
+Alex Palmer (Ipswich Town): 0
+Alphonse Areola (West Ham): 0
+Andrés García (Aston Villa): 0
+
+=== Offsides ===
+
+Top 3 highest:
+
+Dominic Calvert-Lewin (Everton): 27
+Jamie Vardy (Leicester City): 22
+Chris Wood (Nott'ham Forest): 21
+Top 3 lowest:
+
+Aaron Cresswell (West Ham): 0
+Aaron Ramsdale (Southampton): 0
+Abdukodir Khusanov (Manchester City): 0
+
+=== Crosses ===
+
+Top 3 highest:
+
+Pedro Porro (Tottenham): 168
+Bruno Fernandes (Manchester Utd): 161
+Bryan Mbeumo (Brentford): 157
+Top 3 lowest:
+
+Aaron Ramsdale (Southampton): 0
+Alex McCarthy (Southampton): 0
+Alex Palmer (Ipswich Town): 0
+
+=== Recoveries ===
+
+Top 3 highest:
+
+Ryan Christie (Bournemouth): 182
+Bruno Fernandes (Manchester Utd): 179
+Moisés Caicedo (Chelsea): 177
+Top 3 lowest:
+
+Danny Ward (Leicester City): 1
+Fraser Forster (Tottenham): 1
+Hákon Rafn Valdimarsson (Brentford): 1
+
+=== Aerial_Duels_Won ===
+
+Top 3 highest:
+
+Dan Burn (Newcastle Utd): 106
+Nathan Collins (Brentford): 98
+Virgil van Dijk (Liverpool): 98
+Top 3 lowest:
+
+Andrés García (Aston Villa): 0
+Antony (Manchester Utd): 0
+Billy Gilmour (Brighton): 0
+
+=== Aerial_Duels_Lost ===
+
+Top 3 highest:
+
+Chris Wood (Nott'ham Forest): 114
+Jean-Philippe Mateta (Crystal Palace): 92
+Jørgen Strand Larsen (Wolves): 85
+Top 3 lowest:
+
+Aaron Ramsdale (Southampton): 0
+Albert Grønbaek (Southampton): 0
+Alex McCarthy (Southampton): 0
