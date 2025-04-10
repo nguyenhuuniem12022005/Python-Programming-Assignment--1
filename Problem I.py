@@ -284,7 +284,7 @@ column_rename_map = {
 }
 
 filtered_df = filtered_df.rename(columns=column_rename_map)
-filtered_df['Nation']= filtered_df['Nation'].str.split(' ').str[-1] 
+filtered_df['Nation']= filtered_df['Nation'].str.split(' ').str[-1]
 filtered_df = filtered_df.fillna("N/a")
 
 
