@@ -1,1087 +1,975 @@
 
 === Age ===
+Top 3 highest statistics:
+Łukasz Fabiański (Team:West Ham, Nation:POL, Position:GK): 39.98
+Ashley Young (Team:Everton, Nation:ENG, Position:DF,FW): 39.75
+James Milner (Team:Brighton, Nation:ENG, Position:MF): 39.26
 
-Top 3 highest:
-
-Łukasz Fabiański (Team:West Ham,Nation:POL,Position:GK): 39.98
-Ashley Young (Team:Everton,Nation:ENG,Position:DF,FW): 39.75
-James Milner (Team:Brighton,Nation:ENG,Position:MF): 39.26
-
-
-Top 3 lowest:
-
-Mikey Moore (Team:Tottenham,Nation:ENG,Position:FW,MF): 17.66
-Ethan Nwaneri (Team:Arsenal,Nation:ENG,Position:FW,MF): 18.05
-Myles Lewis-Skelly (Team:Arsenal,Nation:ENG,Position:DF): 18.53
+Top 3 lowest statistics:
+Mikey Moore (Team:Tottenham, Nation:ENG, Position:FW,MF): 17.66
+Ethan Nwaneri (Team:Arsenal, Nation:ENG, Position:FW,MF): 18.05
+Myles Lewis-Skelly (Team:Arsenal, Nation:ENG, Position:DF): 18.53
 
 
 
 === Matches ===
+Top 3 highest statistics:
+Alex Iwobi (Team:Fulham, Nation:NGA, Position:FW,MF): 31
+André Onana (Team:Manchester Utd, Nation:CMR, Position:GK): 31
+Anthony Elanga (Team:Nott'ham Forest, Nation:SWE, Position:FW): 31
 
-Top 3 highest:
-
-Alex Iwobi (Team:Fulham,Nation:NGA,Position:FW,MF): 31
-André Onana (Team:Manchester Utd,Nation:CMR,Position:GK): 31
-Anthony Elanga (Team:Nott'ham Forest,Nation:SWE,Position:FW): 31
-
-
-Top 3 lowest:
-
-Ayden Heaven (Team:Manchester Utd,Nation:ENG,Position:DF): 2
-Ben Godfrey (Team:Ipswich Town,Nation:ENG,Position:DF): 2
-Billy Gilmour (Team:Brighton,Nation:SCO,Position:MF): 2
+Top 3 lowest statistics:
+Ayden Heaven (Team:Manchester Utd, Nation:ENG, Position:DF): 2
+Ben Godfrey (Team:Ipswich Town, Nation:ENG, Position:DF): 2
+Billy Gilmour (Team:Brighton, Nation:SCO, Position:MF): 2
 
 
 
 === Playing_Time_Starts ===
+Top 3 highest statistics:
+André Onana (Team:Manchester Utd, Nation:CMR, Position:GK): 31
+Bernd Leno (Team:Fulham, Nation:GER, Position:GK): 31
+Bryan Mbeumo (Team:Brentford, Nation:CMR, Position:FW): 31
 
-Top 3 highest:
-
-André Onana (Team:Manchester Utd,Nation:CMR,Position:GK): 31
-Bernd Leno (Team:Fulham,Nation:GER,Position:GK): 31
-Bryan Mbeumo (Team:Brentford,Nation:CMR,Position:FW): 31
-
-
-Top 3 lowest:
-
-Ali Al Hamadi (Team:Ipswich Town,Nation:IRQ,Position:FW): 0
-Antony (Team:Manchester Utd,Nation:BRA,Position:DF,MF): 0
-Ben Chilwell (Team:Crystal Palace,Nation:ENG,Position:DF): 0
+Top 3 lowest statistics:
+Ali Al Hamadi (Team:Ipswich Town, Nation:IRQ, Position:FW): 0
+Antony (Team:Manchester Utd, Nation:BRA, Position:DF,MF): 0
+Ben Chilwell (Team:Crystal Palace, Nation:ENG, Position:DF): 0
 
 
 
 === Minutes ===
+Top 3 highest statistics:
+André Onana (Team:Manchester Utd, Nation:CMR, Position:GK): 2790.0
+Bernd Leno (Team:Fulham, Nation:GER, Position:GK): 2790.0
+David Raya (Team:Arsenal, Nation:ESP, Position:GK): 2790.0
 
-Top 3 highest:
-
-André Onana (Team:Manchester Utd,Nation:CMR,Position:GK): 2790.0
-Bernd Leno (Team:Fulham,Nation:GER,Position:GK): 2790.0
-David Raya (Team:Arsenal,Nation:ESP,Position:GK): 2790.0
-
-
-Top 3 lowest:
-
-Harrison Reed (Team:Fulham,Nation:ENG,Position:MF): 93.0
-Ayden Heaven (Team:Manchester Utd,Nation:ENG,Position:DF): 95.0
-Jahmai Simpson-Pusey (Team:Manchester City,Nation:ENG,Position:DF): 96.0
+Top 3 lowest statistics:
+Harrison Reed (Team:Fulham, Nation:ENG, Position:MF): 93.0
+Ayden Heaven (Team:Manchester Utd, Nation:ENG, Position:DF): 95.0
+Jahmai Simpson-Pusey (Team:Manchester City, Nation:ENG, Position:DF): 96.0
 
 
 
 === Performance_Gls ===
+Top 3 highest statistics:
+Mohamed Salah (Team:Liverpool, Nation:EGY, Position:FW): 27
+Erling Haaland (Team:Manchester City, Nation:NOR, Position:FW): 21
+Alexander Isak (Team:Newcastle Utd, Nation:SWE, Position:FW): 20
 
-Top 3 highest:
-
-Mohamed Salah (Team:Liverpool,Nation:EGY,Position:FW): 27
-Erling Haaland (Team:Manchester City,Nation:NOR,Position:FW): 21
-Alexander Isak (Team:Newcastle Utd,Nation:SWE,Position:FW): 20
-
-
-Top 3 lowest:
-
-Aaron Cresswell (Team:West Ham,Nation:ENG,Position:DF): 0
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0
-Abdukodir Khusanov (Team:Manchester City,Nation:UZB,Position:DF): 0
+Top 3 lowest statistics:
+Aaron Cresswell (Team:West Ham, Nation:ENG, Position:DF): 0
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0
+Abdukodir Khusanov (Team:Manchester City, Nation:UZB, Position:DF): 0
 
 
 
 === Performance_Ast ===
+Top 3 highest statistics:
+Mohamed Salah (Team:Liverpool, Nation:EGY, Position:FW): 17
+Antonee Robinson (Team:Fulham, Nation:USA, Position:DF): 10
+Bukayo Saka (Team:Arsenal, Nation:ENG, Position:FW,MF): 10
 
-Top 3 highest:
-
-Mohamed Salah (Team:Liverpool,Nation:EGY,Position:FW): 17
-Antonee Robinson (Team:Fulham,Nation:USA,Position:DF): 10
-Bukayo Saka (Team:Arsenal,Nation:ENG,Position:FW,MF): 10
-
-
-Top 3 lowest:
-
-Aaron Cresswell (Team:West Ham,Nation:ENG,Position:DF): 0
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0
-Abdukodir Khusanov (Team:Manchester City,Nation:UZB,Position:DF): 0
+Top 3 lowest statistics:
+Aaron Cresswell (Team:West Ham, Nation:ENG, Position:DF): 0
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0
+Abdukodir Khusanov (Team:Manchester City, Nation:UZB, Position:DF): 0
 
 
 
 === Yellow_Cards ===
+Top 3 highest statistics:
+Saša Lukić (Team:Fulham, Nation:SRB, Position:MF): 12
+Flynn Downes (Team:Southampton, Nation:ENG, Position:MF): 10
+João Gomes (Team:Wolves, Nation:BRA, Position:MF): 10
 
-Top 3 highest:
-
-Saša Lukić (Team:Fulham,Nation:SRB,Position:MF): 12
-Flynn Downes (Team:Southampton,Nation:ENG,Position:MF): 10
-João Gomes (Team:Wolves,Nation:BRA,Position:MF): 10
-
-
-Top 3 lowest:
-
-Abdul Fatawu Issahaku (Team:Leicester City,Nation:GHA,Position:FW): 0
-Adam Webster (Team:Brighton,Nation:ENG,Position:DF): 0
-Albert Grønbaek (Team:Southampton,Nation:DEN,Position:FW,MF): 0
+Top 3 lowest statistics:
+Abdul Fatawu Issahaku (Team:Leicester City, Nation:GHA, Position:FW): 0
+Adam Webster (Team:Brighton, Nation:ENG, Position:DF): 0
+Albert Grønbaek (Team:Southampton, Nation:DEN, Position:FW,MF): 0
 
 
 
 === Red_Cards ===
+Top 3 highest statistics:
+Bruno Fernandes (Team:Manchester Utd, Nation:POR, Position:MF): 2
+Jack Stephens (Team:Southampton, Nation:ENG, Position:DF): 2
+Myles Lewis-Skelly (Team:Arsenal, Nation:ENG, Position:DF): 2
 
-Top 3 highest:
-
-Bruno Fernandes (Team:Manchester Utd,Nation:POR,Position:MF): 2
-Jack Stephens (Team:Southampton,Nation:ENG,Position:DF): 2
-Myles Lewis-Skelly (Team:Arsenal,Nation:ENG,Position:DF): 2
-
-
-Top 3 lowest:
-
-Aaron Cresswell (Team:West Ham,Nation:ENG,Position:DF): 0
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0
-Aaron Wan-Bissaka (Team:West Ham,Nation:ENG,Position:DF): 0
+Top 3 lowest statistics:
+Aaron Cresswell (Team:West Ham, Nation:ENG, Position:DF): 0
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0
+Aaron Wan-Bissaka (Team:West Ham, Nation:ENG, Position:DF): 0
 
 
 
 === Expected_xG ===
+Top 3 highest statistics:
+Mohamed Salah (Team:Liverpool, Nation:EGY, Position:FW): 22.5
+Erling Haaland (Team:Manchester City, Nation:NOR, Position:FW): 20.8
+Alexander Isak (Team:Newcastle Utd, Nation:SWE, Position:FW): 16.3
 
-Top 3 highest:
-
-Mohamed Salah (Team:Liverpool,Nation:EGY,Position:FW): 22.5
-Erling Haaland (Team:Manchester City,Nation:NOR,Position:FW): 20.8
-Alexander Isak (Team:Newcastle Utd,Nation:SWE,Position:FW): 16.3
-
-
-Top 3 lowest:
-
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0.0
-Abdukodir Khusanov (Team:Manchester City,Nation:UZB,Position:DF): 0.0
-Adam Webster (Team:Brighton,Nation:ENG,Position:DF): 0.0
+Top 3 lowest statistics:
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0.0
+Abdukodir Khusanov (Team:Manchester City, Nation:UZB, Position:DF): 0.0
+Adam Webster (Team:Brighton, Nation:ENG, Position:DF): 0.0
 
 
 
 === Expected_xAG ===
+Top 3 highest statistics:
+Mohamed Salah (Team:Liverpool, Nation:EGY, Position:FW): 11.3
+Cole Palmer (Team:Chelsea, Nation:ENG, Position:MF): 9.1
+Son Heung-min (Team:Tottenham, Nation:KOR, Position:FW): 8.2
 
-Top 3 highest:
-
-Mohamed Salah (Team:Liverpool,Nation:EGY,Position:FW): 11.3
-Cole Palmer (Team:Chelsea,Nation:ENG,Position:MF): 9.1
-Son Heung-min (Team:Tottenham,Nation:KOR,Position:FW): 8.2
-
-
-Top 3 lowest:
-
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0.0
-Albert Grønbaek (Team:Southampton,Nation:DEN,Position:FW,MF): 0.0
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0.0
+Top 3 lowest statistics:
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0.0
+Albert Grønbaek (Team:Southampton, Nation:DEN, Position:FW,MF): 0.0
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0.0
 
 
 
 === Progression_PrgC ===
+Top 3 highest statistics:
+Jeremy Doku (Team:Manchester City, Nation:BEL, Position:FW,MF): 166
+Kaoru Mitoma (Team:Brighton, Nation:JPN, Position:FW,MF): 135
+Sávio (Team:Manchester City, Nation:BRA, Position:FW,MF): 129
 
-Top 3 highest:
-
-Jeremy Doku (Team:Manchester City,Nation:BEL,Position:FW,MF): 166
-Kaoru Mitoma (Team:Brighton,Nation:JPN,Position:FW,MF): 135
-Sávio (Team:Manchester City,Nation:BRA,Position:FW,MF): 129
-
-
-Top 3 lowest:
-
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex Palmer (Team:Ipswich Town,Nation:ENG,Position:GK): 0
+Top 3 lowest statistics:
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex Palmer (Team:Ipswich Town, Nation:ENG, Position:GK): 0
 
 
 
 === Progression_PrgP ===
+Top 3 highest statistics:
+Bruno Fernandes (Team:Manchester Utd, Nation:POR, Position:MF): 251
+Joško Gvardiol (Team:Manchester City, Nation:CRO, Position:DF): 218
+Bruno Guimarães (Team:Newcastle Utd, Nation:BRA, Position:MF): 212
 
-Top 3 highest:
-
-Bruno Fernandes (Team:Manchester Utd,Nation:POR,Position:MF): 251
-Joško Gvardiol (Team:Manchester City,Nation:CRO,Position:DF): 218
-Bruno Guimarães (Team:Newcastle Utd,Nation:BRA,Position:MF): 212
-
-
-Top 3 lowest:
-
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0
-Alisson (Team:Liverpool,Nation:BRA,Position:GK): 0
+Top 3 lowest statistics:
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0
+Alisson (Team:Liverpool, Nation:BRA, Position:GK): 0
 
 
 
 === Progression_PrgR ===
+Top 3 highest statistics:
+Mohamed Salah (Team:Liverpool, Nation:EGY, Position:FW): 384
+Bryan Mbeumo (Team:Brentford, Nation:CMR, Position:FW): 287
+Kaoru Mitoma (Team:Brighton, Nation:JPN, Position:FW,MF): 274
 
-Top 3 highest:
-
-Mohamed Salah (Team:Liverpool,Nation:EGY,Position:FW): 384
-Bryan Mbeumo (Team:Brentford,Nation:CMR,Position:FW): 287
-Kaoru Mitoma (Team:Brighton,Nation:JPN,Position:FW,MF): 274
-
-
-Top 3 lowest:
-
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex Palmer (Team:Ipswich Town,Nation:ENG,Position:GK): 0
+Top 3 lowest statistics:
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex Palmer (Team:Ipswich Town, Nation:ENG, Position:GK): 0
 
 
 
 === Per_90_Minutes_Gls ===
+Top 3 highest statistics:
+Ryan Sessegnon (Team:Fulham, Nation:ENG, Position:FW,DF): 1.41
+James Mcatee (Team:Manchester City, Nation:ENG, Position:MF,FW): 1.26
+Jáder Durán (Team:Aston Villa, Nation:COL, Position:FW): 0.99
 
-Top 3 highest:
-
-Ryan Sessegnon (Team:Fulham,Nation:ENG,Position:FW,DF): 1.41
-James Mcatee (Team:Manchester City,Nation:ENG,Position:MF,FW): 1.26
-Jáder Durán (Team:Aston Villa,Nation:COL,Position:FW): 0.99
-
-
-Top 3 lowest:
-
-Aaron Cresswell (Team:West Ham,Nation:ENG,Position:DF): 0.0
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0.0
-Abdukodir Khusanov (Team:Manchester City,Nation:UZB,Position:DF): 0.0
+Top 3 lowest statistics:
+Aaron Cresswell (Team:West Ham, Nation:ENG, Position:DF): 0.0
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0.0
+Abdukodir Khusanov (Team:Manchester City, Nation:UZB, Position:DF): 0.0
 
 
 
 === Per_90_Minutes_Ast ===
+Top 3 highest statistics:
+Bukayo Saka (Team:Arsenal, Nation:ENG, Position:FW,MF): 0.67
+Danny Ings (Team:West Ham, Nation:ENG, Position:FW,MF): 0.63
+Marcus Rashford (Team:Aston Villa, Nation:ENG, Position:FW): 0.61
 
-Top 3 highest:
-
-Bukayo Saka (Team:Arsenal,Nation:ENG,Position:FW,MF): 0.67
-Danny Ings (Team:West Ham,Nation:ENG,Position:FW,MF): 0.63
-Marcus Rashford (Team:Aston Villa,Nation:ENG,Position:FW): 0.61
-
-
-Top 3 lowest:
-
-Aaron Cresswell (Team:West Ham,Nation:ENG,Position:DF): 0.0
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0.0
-Abdukodir Khusanov (Team:Manchester City,Nation:UZB,Position:DF): 0.0
+Top 3 lowest statistics:
+Aaron Cresswell (Team:West Ham, Nation:ENG, Position:DF): 0.0
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0.0
+Abdukodir Khusanov (Team:Manchester City, Nation:UZB, Position:DF): 0.0
 
 
 
 === Per_90_Minutes_xG ===
+Top 3 highest statistics:
+James Mcatee (Team:Manchester City, Nation:ENG, Position:MF,FW): 0.87
+Erling Haaland (Team:Manchester City, Nation:NOR, Position:FW): 0.76
+Mohamed Salah (Team:Liverpool, Nation:EGY, Position:FW): 0.74
 
-Top 3 highest:
-
-James Mcatee (Team:Manchester City,Nation:ENG,Position:MF,FW): 0.87
-Erling Haaland (Team:Manchester City,Nation:NOR,Position:FW): 0.76
-Mohamed Salah (Team:Liverpool,Nation:EGY,Position:FW): 0.74
-
-
-Top 3 lowest:
-
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0.0
-Abdukodir Khusanov (Team:Manchester City,Nation:UZB,Position:DF): 0.0
-Adam Webster (Team:Brighton,Nation:ENG,Position:DF): 0.0
+Top 3 lowest statistics:
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0.0
+Abdukodir Khusanov (Team:Manchester City, Nation:UZB, Position:DF): 0.0
+Adam Webster (Team:Brighton, Nation:ENG, Position:DF): 0.0
 
 
 
 === Per_90_Minutes_xAG ===
+Top 3 highest statistics:
+Kieran Tierney (Team:Arsenal, Nation:SCO, Position:DF,FW): 0.76
+Marcus Rashford (Team:Aston Villa, Nation:ENG, Position:FW): 0.6
+Mykhailo Mudryk (Team:Chelsea, Nation:UKR, Position:FW): 0.58
 
-Top 3 highest:
+Top 3 lowest statistics:
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0.0
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0.0
+Alex Palmer (Team:Ipswich Town, Nation:ENG, Position:GK): 0.0
 
-Kieran Tierney (Team:Arsenal,Nation:SCO,Position:DF,FW): 0.76
-Marcus Rashford (Team:Aston Villa,Nation:ENG,Position:FW): 0.6
-Mykhailo Mudryk (Team:Chelsea,Nation:UKR,Position:FW): 0.58
 
 
-Top 3 lowest:
+=== Goals_Against_Per90 ===
+Top 3 highest statistics:
+Danny Ward (Team:Leicester City, Nation:WAL, Position:GK): 4.00
+Christian Walton (Team:Ipswich Town, Nation:ENG, Position:GK): 2.67
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 2.60
 
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0.0
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0.0
-Alex Palmer (Team:Ipswich Town,Nation:ENG,Position:GK): 0.0
+Top 3 lowest statistics:
+Jason Steele (Team:Brighton, Nation:ENG, Position:GK): 0.50
+David Raya (Team:Arsenal, Nation:ESP, Position:GK): 0.84
+Alisson (Team:Liverpool, Nation:BRA, Position:GK): 0.86
+
+
+
+=== Save_Percentage ===
+Top 3 highest statistics:
+Neto (Team:Bournemouth, Nation:BRA, Position:GK): 84.6
+Mark Travers (Team:Bournemouth, Nation:IRL, Position:GK): 80.0
+Robert Sánchez (Team:Chelsea, Nation:ESP, Position:GK): 77.8
+
+Top 3 lowest statistics:
+Danny Ward (Team:Leicester City, Nation:WAL, Position:GK): 40.0
+Hákon Rafn Valdimarsson (Team:Brentford, Nation:ISL, Position:GK): 50.0
+Robin Olsen (Team:Aston Villa, Nation:SWE, Position:GK): 55.6
+
+
+
+=== CleanSheet_Percentage ===
+Top 3 highest statistics:
+Hákon Rafn Valdimarsson (Team:Brentford, Nation:ISL, Position:GK): 100.0
+Robin Olsen (Team:Aston Villa, Nation:SWE, Position:GK): 100.0
+Jason Steele (Team:Brighton, Nation:ENG, Position:GK): 50.0
+
+Top 3 lowest statistics:
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0.0
+Alex Palmer (Team:Ipswich Town, Nation:ENG, Position:GK): 0.0
+Danny Ward (Team:Leicester City, Nation:WAL, Position:GK): 0.0
+
+
+
+=== Penalty_Save_Percentage ===
+Top 3 highest statistics:
+Caoimhín Kelleher (Team:Liverpool, Nation:IRL, Position:GK): 100.0
+Jordan Pickford (Team:Everton, Nation:ENG, Position:GK): 100.0
+Dean Henderson (Team:Crystal Palace, Nation:ENG, Position:GK): 50.0
+
+Top 3 lowest statistics:
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0.0
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0.0
+Arijanet Muric (Team:Ipswich Town, Nation:KVX, Position:GK): 0.0
+
+
+
+=== Shots_On_Target_Percentage ===
+Top 3 highest statistics:
+Adam Webster (Team:Brighton, Nation:ENG, Position:DF): 100.0
+Archie Gray (Team:Tottenham, Nation:ENG, Position:DF,MF): 100.0
+Harry Clarke (Team:Ipswich Town, Nation:ENG, Position:DF): 100.0
+
+Top 3 lowest statistics:
+Aaron Cresswell (Team:West Ham, Nation:ENG, Position:DF): 0.0
+Abdukodir Khusanov (Team:Manchester City, Nation:UZB, Position:DF): 0.0
+Adam Lallana (Team:Southampton, Nation:ENG, Position:MF): 0.0
 
 
 
 === Shots_On_Target_Per90 ===
+Top 3 highest statistics:
+Julio Enciso (Team:Brighton, Nation:PAR, Position:MF,FW): 3.37
+Ryan Sessegnon (Team:Fulham, Nation:ENG, Position:FW,DF): 2.36
+Donyell Malen (Team:Aston Villa, Nation:NED, Position:FW): 2.31
 
-Top 3 highest:
+Top 3 lowest statistics:
+Aaron Cresswell (Team:West Ham, Nation:ENG, Position:DF): 0.0
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0.0
+Abdukodir Khusanov (Team:Manchester City, Nation:UZB, Position:DF): 0.0
 
-Julio Enciso (Team:Brighton,Nation:PAR,Position:MF,FW): 3.37
-Ryan Sessegnon (Team:Fulham,Nation:ENG,Position:FW,DF): 2.36
-Donyell Malen (Team:Aston Villa,Nation:NED,Position:FW): 2.31
 
 
-Top 3 lowest:
+=== Goals_PerShot ===
+Top 3 highest statistics:
+John Stones (Team:Manchester City, Nation:ENG, Position:DF,MF): 1.00
+Myles Lewis-Skelly (Team:Arsenal, Nation:ENG, Position:DF): 1.00
+Axel Disasi (Team:Chelsea, Nation:FRA, Position:DF): 0.50
 
-Aaron Cresswell (Team:West Ham,Nation:ENG,Position:DF): 0.0
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0.0
-Abdukodir Khusanov (Team:Manchester City,Nation:UZB,Position:DF): 0.0
+Top 3 lowest statistics:
+Aaron Cresswell (Team:West Ham, Nation:ENG, Position:DF): 0.00
+Abdukodir Khusanov (Team:Manchester City, Nation:UZB, Position:DF): 0.00
+Abdul Fatawu Issahaku (Team:Leicester City, Nation:GHA, Position:FW): 0.00
+
+
+
+=== Shooting_Distance ===
+Top 3 highest statistics:
+Nathaniel Clyne (Team:Crystal Palace, Nation:ENG, Position:DF,MF): 32.3
+Ibrahim Sangaré (Team:Nott'ham Forest, Nation:CIV, Position:MF): 32.0
+Welington (Team:Southampton, Nation:BRA, Position:DF,MF): 31.9
+
+Top 3 lowest statistics:
+Kieran Tierney (Team:Arsenal, Nation:SCO, Position:DF,FW): 2.6
+Harry Clarke (Team:Ipswich Town, Nation:ENG, Position:DF): 4.5
+William Saliba (Team:Arsenal, Nation:FRA, Position:DF): 4.5
 
 
 
 === Total_Passes_Completed ===
+Top 3 highest statistics:
+Virgil van Dijk (Team:Liverpool, Nation:NED, Position:DF): 2230
+Joško Gvardiol (Team:Manchester City, Nation:CRO, Position:DF): 1983
+Levi Colwill (Team:Chelsea, Nation:ENG, Position:DF): 1955
 
-Top 3 highest:
-
-Virgil van Dijk (Team:Liverpool,Nation:NED,Position:DF): 2230
-Joško Gvardiol (Team:Manchester City,Nation:CRO,Position:DF): 1983
-Levi Colwill (Team:Chelsea,Nation:ENG,Position:DF): 1955
-
-
-Top 3 lowest:
-
-Albert Grønbaek (Team:Southampton,Nation:DEN,Position:FW,MF): 13
-Odsonne Édouard (Team:Crystal Palace,Nation:FRA,Position:MF,FW): 17
-Callum Wilson (Team:Newcastle Utd,Nation:ENG,Position:FW): 23
+Top 3 lowest statistics:
+Albert Grønbaek (Team:Southampton, Nation:DEN, Position:FW,MF): 13
+Odsonne Édouard (Team:Crystal Palace, Nation:FRA, Position:MF,FW): 17
+Callum Wilson (Team:Newcastle Utd, Nation:ENG, Position:FW): 23
 
 
 
 === Total_Passes_Completed_Percentage ===
+Top 3 highest statistics:
+Wataru Endo (Team:Liverpool, Nation:JPN, Position:MF): 94.0
+Manuel Akanji (Team:Manchester City, Nation:SUI, Position:DF): 93.9
+Nathan Aké (Team:Manchester City, Nation:NED, Position:DF): 93.9
 
-Top 3 highest:
-
-Wataru Endo (Team:Liverpool,Nation:JPN,Position:MF): 94.0
-Manuel Akanji (Team:Manchester City,Nation:SUI,Position:DF): 93.9
-Nathan Aké (Team:Manchester City,Nation:NED,Position:DF): 93.9
-
-
-Top 3 lowest:
-
-Matz Sels (Team:Nott'ham Forest,Nation:BEL,Position:GK): 50.6
-George Hirst (Team:Ipswich Town,Nation:SCO,Position:FW): 54.1
-Beto (Team:Everton,Nation:GNB,Position:FW): 57.8
+Top 3 lowest statistics:
+Matz Sels (Team:Nott'ham Forest, Nation:BEL, Position:GK): 50.6
+George Hirst (Team:Ipswich Town, Nation:SCO, Position:FW): 54.1
+Beto (Team:Everton, Nation:GNB, Position:FW): 57.8
 
 
 
 === Total_Passing_Distance ===
+Top 3 highest statistics:
+Virgil van Dijk (Team:Liverpool, Nation:NED, Position:DF): 40386
+Levi Colwill (Team:Chelsea, Nation:ENG, Position:DF): 35488
+Jan Paul van Hecke (Team:Brighton, Nation:NED, Position:DF): 34428
 
-Top 3 highest:
-
-Virgil van Dijk (Team:Liverpool,Nation:NED,Position:DF): 40386
-Levi Colwill (Team:Chelsea,Nation:ENG,Position:DF): 35488
-Jan Paul van Hecke (Team:Brighton,Nation:NED,Position:DF): 34428
-
-
-Top 3 lowest:
-
-Albert Grønbaek (Team:Southampton,Nation:DEN,Position:FW,MF): 135
-Odsonne Édouard (Team:Crystal Palace,Nation:FRA,Position:MF,FW): 230
-Ali Al Hamadi (Team:Ipswich Town,Nation:IRQ,Position:FW): 278
+Top 3 lowest statistics:
+Albert Grønbaek (Team:Southampton, Nation:DEN, Position:FW,MF): 135
+Odsonne Édouard (Team:Crystal Palace, Nation:FRA, Position:MF,FW): 230
+Ali Al Hamadi (Team:Ipswich Town, Nation:IRQ, Position:FW): 278
 
 
 
 === Short_Passe_Completed_Percentage ===
+Top 3 highest statistics:
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 100.0
+Antonín Kinský (Team:Tottenham, Nation:CZE, Position:GK): 100.0
+Arijanet Muric (Team:Ipswich Town, Nation:KVX, Position:GK): 100.0
 
-Top 3 highest:
-
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 100.0
-Antonín Kinský (Team:Tottenham,Nation:CZE,Position:GK): 100.0
-Arijanet Muric (Team:Ipswich Town,Nation:KVX,Position:GK): 100.0
-
-
-Top 3 lowest:
-
-Paul Onuachu (Team:Southampton,Nation:NGA,Position:FW): 63.0
-George Hirst (Team:Ipswich Town,Nation:SCO,Position:FW): 67.4
-Rodrigo Muniz (Team:Fulham,Nation:BRA,Position:FW): 67.7
+Top 3 lowest statistics:
+Paul Onuachu (Team:Southampton, Nation:NGA, Position:FW): 63.0
+George Hirst (Team:Ipswich Town, Nation:SCO, Position:FW): 67.4
+Rodrigo Muniz (Team:Fulham, Nation:BRA, Position:FW): 67.7
 
 
 
 === Medium_Passes_Completed_Percentage ===
+Top 3 highest statistics:
+Alex Palmer (Team:Ipswich Town, Nation:ENG, Position:GK): 100.0
+Caoimhín Kelleher (Team:Liverpool, Nation:IRL, Position:GK): 100.0
+Danny Ward (Team:Leicester City, Nation:WAL, Position:GK): 100.0
 
-Top 3 highest:
+Top 3 lowest statistics:
+George Hirst (Team:Ipswich Town, Nation:SCO, Position:FW): 40.0
+Albert Grønbaek (Team:Southampton, Nation:DEN, Position:FW,MF): 50.0
+Beto (Team:Everton, Nation:GNB, Position:FW): 50.9
 
-Alex Palmer (Team:Ipswich Town,Nation:ENG,Position:GK): 100.0
-Caoimhín Kelleher (Team:Liverpool,Nation:IRL,Position:GK): 100.0
-Danny Ward (Team:Leicester City,Nation:WAL,Position:GK): 100.0
 
 
-Top 3 lowest:
+=== Long_Passes_Completed_Percentage ===
+Top 3 highest statistics:
+Andy Irving (Team:West Ham, Nation:SCO, Position:MF): 100.0
+Antony (Team:Manchester Utd, Nation:BRA, Position:DF,MF): 100.0
+Chiedozie Ogbene (Team:Ipswich Town, Nation:IRL, Position:FW): 100.0
 
-George Hirst (Team:Ipswich Town,Nation:SCO,Position:FW): 40.0
-Albert Grønbaek (Team:Southampton,Nation:DEN,Position:FW,MF): 50.0
-Beto (Team:Everton,Nation:GNB,Position:FW): 50.9
+Top 3 lowest statistics:
+Enes Ünal (Team:Bournemouth, Nation:TUR, Position:FW,MF): 0.0
+Evan Ferguson (Team:West Ham, Nation:IRL, Position:FW): 0.0
+George Hirst (Team:Ipswich Town, Nation:SCO, Position:FW): 0.0
 
 
 
 === Keypasses ===
+Top 3 highest statistics:
+Bruno Fernandes (Team:Manchester Utd, Nation:POR, Position:MF): 75
+Cole Palmer (Team:Chelsea, Nation:ENG, Position:MF): 71
+Mohamed Salah (Team:Liverpool, Nation:EGY, Position:FW): 70
 
-Top 3 highest:
-
-Bruno Fernandes (Team:Manchester Utd,Nation:POR,Position:MF): 75
-Cole Palmer (Team:Chelsea,Nation:ENG,Position:MF): 71
-Mohamed Salah (Team:Liverpool,Nation:EGY,Position:FW): 70
-
-
-Top 3 lowest:
-
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0
-Alphonse Areola (Team:West Ham,Nation:FRA,Position:GK): 0
+Top 3 lowest statistics:
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0
+Alphonse Areola (Team:West Ham, Nation:FRA, Position:GK): 0
 
 
 
 === Passes_Into_Final_Third ===
+Top 3 highest statistics:
+Virgil van Dijk (Team:Liverpool, Nation:NED, Position:DF): 236
+Moisés Caicedo (Team:Chelsea, Nation:ECU, Position:MF): 194
+Youri Tielemans (Team:Aston Villa, Nation:BEL, Position:MF): 190
 
-Top 3 highest:
-
-Virgil van Dijk (Team:Liverpool,Nation:NED,Position:DF): 236
-Moisés Caicedo (Team:Chelsea,Nation:ECU,Position:MF): 194
-Youri Tielemans (Team:Aston Villa,Nation:BEL,Position:MF): 190
-
-
-Top 3 lowest:
-
-Ali Al Hamadi (Team:Ipswich Town,Nation:IRQ,Position:FW): 0
-Chiedozie Ogbene (Team:Ipswich Town,Nation:IRL,Position:FW): 0
-Evan Ferguson (Team:West Ham,Nation:IRL,Position:FW): 0
+Top 3 lowest statistics:
+Ali Al Hamadi (Team:Ipswich Town, Nation:IRQ, Position:FW): 0
+Chiedozie Ogbene (Team:Ipswich Town, Nation:IRL, Position:FW): 0
+Evan Ferguson (Team:West Ham, Nation:IRL, Position:FW): 0
 
 
 
 === Passes_Into_Penalty_Area ===
+Top 3 highest statistics:
+Mohamed Salah (Team:Liverpool, Nation:EGY, Position:FW): 74
+Alex Iwobi (Team:Fulham, Nation:NGA, Position:FW,MF): 68
+Martin Ødegaard (Team:Arsenal, Nation:NOR, Position:MF): 63
 
-Top 3 highest:
-
-Mohamed Salah (Team:Liverpool,Nation:EGY,Position:FW): 74
-Alex Iwobi (Team:Fulham,Nation:NGA,Position:FW,MF): 68
-Martin Ødegaard (Team:Arsenal,Nation:NOR,Position:MF): 63
-
-
-Top 3 lowest:
-
-Abdukodir Khusanov (Team:Manchester City,Nation:UZB,Position:DF): 0
-Albert Grønbaek (Team:Southampton,Nation:DEN,Position:FW,MF): 0
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0
+Top 3 lowest statistics:
+Abdukodir Khusanov (Team:Manchester City, Nation:UZB, Position:DF): 0
+Albert Grønbaek (Team:Southampton, Nation:DEN, Position:FW,MF): 0
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0
 
 
 
 === Crossed_Into_Penalty_Area ===
+Top 3 highest statistics:
+Antonee Robinson (Team:Fulham, Nation:USA, Position:DF): 26
+Pedro Porro (Team:Tottenham, Nation:ESP, Position:DF): 22
+Milos Kerkez (Team:Bournemouth, Nation:HUN, Position:DF): 20
 
-Top 3 highest:
-
-Antonee Robinson (Team:Fulham,Nation:USA,Position:DF): 26
-Pedro Porro (Team:Tottenham,Nation:ESP,Position:DF): 22
-Milos Kerkez (Team:Bournemouth,Nation:HUN,Position:DF): 20
-
-
-Top 3 lowest:
-
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0
-Abdoulaye Doucouré (Team:Everton,Nation:MLI,Position:MF): 0
-Abdukodir Khusanov (Team:Manchester City,Nation:UZB,Position:DF): 0
+Top 3 lowest statistics:
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0
+Abdoulaye Doucouré (Team:Everton, Nation:MLI, Position:MF): 0
+Abdukodir Khusanov (Team:Manchester City, Nation:UZB, Position:DF): 0
 
 
 
 === Progressive_Passes ===
+Top 3 highest statistics:
+Bruno Fernandes (Team:Manchester Utd, Nation:POR, Position:MF): 251
+Joško Gvardiol (Team:Manchester City, Nation:CRO, Position:DF): 218
+Bruno Guimarães (Team:Newcastle Utd, Nation:BRA, Position:MF): 212
 
-Top 3 highest:
-
-Bruno Fernandes (Team:Manchester Utd,Nation:POR,Position:MF): 251
-Joško Gvardiol (Team:Manchester City,Nation:CRO,Position:DF): 218
-Bruno Guimarães (Team:Newcastle Utd,Nation:BRA,Position:MF): 212
-
-
-Top 3 lowest:
-
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0
-Alisson (Team:Liverpool,Nation:BRA,Position:GK): 0
+Top 3 lowest statistics:
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0
+Alisson (Team:Liverpool, Nation:BRA, Position:GK): 0
 
 
 
 === Shot_Creating_Actions ===
+Top 3 highest statistics:
+Cole Palmer (Team:Chelsea, Nation:ENG, Position:MF): 159
+Bruno Fernandes (Team:Manchester Utd, Nation:POR, Position:MF): 153
+Mohamed Salah (Team:Liverpool, Nation:EGY, Position:FW): 135
 
-Top 3 highest:
-
-Cole Palmer (Team:Chelsea,Nation:ENG,Position:MF): 159
-Bruno Fernandes (Team:Manchester Utd,Nation:POR,Position:MF): 153
-Mohamed Salah (Team:Liverpool,Nation:EGY,Position:FW): 135
-
-
-Top 3 lowest:
-
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0
-Ben Mee (Team:Brentford,Nation:ENG,Position:DF): 0
-Benoît Badiashile (Team:Chelsea,Nation:FRA,Position:DF): 0
+Top 3 lowest statistics:
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0
+Ben Mee (Team:Brentford, Nation:ENG, Position:DF): 0
+Benoît Badiashile (Team:Chelsea, Nation:FRA, Position:DF): 0
 
 
 
 === Shot_Creating_Actions_Per90 ===
+Top 3 highest statistics:
+Philip Billing (Team:Bournemouth, Nation:DEN, Position:MF): 7.83
+Luis Guilherme (Team:West Ham, Nation:BRA, Position:MF,FW): 7.43
+Bukayo Saka (Team:Arsenal, Nation:ENG, Position:FW,MF): 6.19
 
-Top 3 highest:
-
-Philip Billing (Team:Bournemouth,Nation:DEN,Position:MF): 7.83
-Luis Guilherme (Team:West Ham,Nation:BRA,Position:MF,FW): 7.43
-Bukayo Saka (Team:Arsenal,Nation:ENG,Position:FW,MF): 6.19
-
-
-Top 3 lowest:
-
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0.0
-Ben Mee (Team:Brentford,Nation:ENG,Position:DF): 0.0
-Benoît Badiashile (Team:Chelsea,Nation:FRA,Position:DF): 0.0
+Top 3 lowest statistics:
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0.0
+Ben Mee (Team:Brentford, Nation:ENG, Position:DF): 0.0
+Benoît Badiashile (Team:Chelsea, Nation:FRA, Position:DF): 0.0
 
 
 
 === Goal_Creating_Actions ===
+Top 3 highest statistics:
+Mohamed Salah (Team:Liverpool, Nation:EGY, Position:FW): 23
+Bukayo Saka (Team:Arsenal, Nation:ENG, Position:FW,MF): 21
+Mikkel Damsgaard (Team:Brentford, Nation:DEN, Position:MF,FW): 18
 
-Top 3 highest:
-
-Mohamed Salah (Team:Liverpool,Nation:EGY,Position:FW): 23
-Bukayo Saka (Team:Arsenal,Nation:ENG,Position:FW,MF): 21
-Mikkel Damsgaard (Team:Brentford,Nation:DEN,Position:MF,FW): 18
-
-
-Top 3 lowest:
-
-Aaron Cresswell (Team:West Ham,Nation:ENG,Position:DF): 0
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0
-Abdukodir Khusanov (Team:Manchester City,Nation:UZB,Position:DF): 0
+Top 3 lowest statistics:
+Aaron Cresswell (Team:West Ham, Nation:ENG, Position:DF): 0
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0
+Abdukodir Khusanov (Team:Manchester City, Nation:UZB, Position:DF): 0
 
 
 
 === Goal_Creating_Actions_Per90 ===
+Top 3 highest statistics:
+Bukayo Saka (Team:Arsenal, Nation:ENG, Position:FW,MF): 1.41
+Harvey Elliott (Team:Liverpool, Nation:ENG, Position:MF,FW): 1.1
+Mikey Moore (Team:Tottenham, Nation:ENG, Position:FW,MF): 0.97
 
-Top 3 highest:
-
-Bukayo Saka (Team:Arsenal,Nation:ENG,Position:FW,MF): 1.41
-Harvey Elliott (Team:Liverpool,Nation:ENG,Position:MF,FW): 1.1
-Mikey Moore (Team:Tottenham,Nation:ENG,Position:FW,MF): 0.97
-
-
-Top 3 lowest:
-
-Aaron Cresswell (Team:West Ham,Nation:ENG,Position:DF): 0.0
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0.0
-Abdukodir Khusanov (Team:Manchester City,Nation:UZB,Position:DF): 0.0
+Top 3 lowest statistics:
+Aaron Cresswell (Team:West Ham, Nation:ENG, Position:DF): 0.0
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0.0
+Abdukodir Khusanov (Team:Manchester City, Nation:UZB, Position:DF): 0.0
 
 
 
 === Tackles ===
+Top 3 highest statistics:
+Idrissa Gana Gueye (Team:Everton, Nation:SEN, Position:MF): 115
+Daniel Muñoz (Team:Crystal Palace, Nation:COL, Position:DF): 97
+Noussair Mazraoui (Team:Manchester Utd, Nation:MAR, Position:DF): 92
 
-Top 3 highest:
-
-Idrissa Gana Gueye (Team:Everton,Nation:SEN,Position:MF): 115
-Daniel Muñoz (Team:Crystal Palace,Nation:COL,Position:DF): 97
-Noussair Mazraoui (Team:Manchester Utd,Nation:MAR,Position:DF): 92
-
-
-Top 3 lowest:
-
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex Palmer (Team:Ipswich Town,Nation:ENG,Position:GK): 0
+Top 3 lowest statistics:
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex Palmer (Team:Ipswich Town, Nation:ENG, Position:GK): 0
 
 
 
 === Tackles_Won ===
+Top 3 highest statistics:
+Idrissa Gana Gueye (Team:Everton, Nation:SEN, Position:MF): 69
+Daniel Muñoz (Team:Crystal Palace, Nation:COL, Position:DF): 64
+Moisés Caicedo (Team:Chelsea, Nation:ECU, Position:MF): 57
 
-Top 3 highest:
-
-Idrissa Gana Gueye (Team:Everton,Nation:SEN,Position:MF): 69
-Daniel Muñoz (Team:Crystal Palace,Nation:COL,Position:DF): 64
-Moisés Caicedo (Team:Chelsea,Nation:ECU,Position:MF): 57
-
-
-Top 3 lowest:
-
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex Palmer (Team:Ipswich Town,Nation:ENG,Position:GK): 0
+Top 3 lowest statistics:
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex Palmer (Team:Ipswich Town, Nation:ENG, Position:GK): 0
 
 
 
 === Defensive_Actions_Attempted ===
+Top 3 highest statistics:
+Trent Alexander-Arnold (Team:Liverpool, Nation:ENG, Position:DF): 99
+Elliot Anderson (Team:Nott'ham Forest, Nation:ENG, Position:MF): 89
+Alexis Mac Allister (Team:Liverpool, Nation:ARG, Position:MF): 87
 
-Top 3 highest:
-
-Trent Alexander-Arnold (Team:Liverpool,Nation:ENG,Position:DF): 99
-Elliot Anderson (Team:Nott'ham Forest,Nation:ENG,Position:MF): 89
-Alexis Mac Allister (Team:Liverpool,Nation:ARG,Position:MF): 87
-
-
-Top 3 lowest:
-
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex Palmer (Team:Ipswich Town,Nation:ENG,Position:GK): 0
-Armando Broja (Team:Everton,Nation:ALB,Position:FW): 0
+Top 3 lowest statistics:
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex Palmer (Team:Ipswich Town, Nation:ENG, Position:GK): 0
+Armando Broja (Team:Everton, Nation:ALB, Position:FW): 0
 
 
 
 === Defensive_Actions_Lost ===
+Top 3 highest statistics:
+Trent Alexander-Arnold (Team:Liverpool, Nation:ENG, Position:DF): 53
+João Gomes (Team:Wolves, Nation:BRA, Position:MF): 51
+Elliot Anderson (Team:Nott'ham Forest, Nation:ENG, Position:MF): 49
 
-Top 3 highest:
-
-Trent Alexander-Arnold (Team:Liverpool,Nation:ENG,Position:DF): 53
-João Gomes (Team:Wolves,Nation:BRA,Position:MF): 51
-Elliot Anderson (Team:Nott'ham Forest,Nation:ENG,Position:MF): 49
-
-
-Top 3 lowest:
-
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex Palmer (Team:Ipswich Town,Nation:ENG,Position:GK): 0
-Antonín Kinský (Team:Tottenham,Nation:CZE,Position:GK): 0
+Top 3 lowest statistics:
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex Palmer (Team:Ipswich Town, Nation:ENG, Position:GK): 0
+Antonín Kinský (Team:Tottenham, Nation:CZE, Position:GK): 0
 
 
 
 === Blocks ===
+Top 3 highest statistics:
+Nathan Collins (Team:Brentford, Nation:IRL, Position:DF): 66
+Murillo (Team:Nott'ham Forest, Nation:BRA, Position:DF): 63
+James Tarkowski (Team:Everton, Nation:ENG, Position:DF): 56
 
-Top 3 highest:
-
-Nathan Collins (Team:Brentford,Nation:IRL,Position:DF): 66
-Murillo (Team:Nott'ham Forest,Nation:BRA,Position:DF): 63
-James Tarkowski (Team:Everton,Nation:ENG,Position:DF): 56
-
-
-Top 3 lowest:
-
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex Palmer (Team:Ipswich Town,Nation:ENG,Position:GK): 0
+Top 3 lowest statistics:
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex Palmer (Team:Ipswich Town, Nation:ENG, Position:GK): 0
 
 
 
 === Shots_Blocked ===
+Top 3 highest statistics:
+Nathan Collins (Team:Brentford, Nation:IRL, Position:DF): 47
+Dara O'Shea (Team:Ipswich Town, Nation:IRL, Position:DF): 43
+James Tarkowski (Team:Everton, Nation:ENG, Position:DF): 41
 
-Top 3 highest:
-
-Nathan Collins (Team:Brentford,Nation:IRL,Position:DF): 47
-Dara O'Shea (Team:Ipswich Town,Nation:IRL,Position:DF): 43
-James Tarkowski (Team:Everton,Nation:ENG,Position:DF): 41
-
-
-Top 3 lowest:
-
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0
-Abdul Fatawu Issahaku (Team:Leicester City,Nation:GHA,Position:FW): 0
-Adama Traoré (Team:Fulham,Nation:ESP,Position:FW,MF): 0
+Top 3 lowest statistics:
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0
+Abdul Fatawu Issahaku (Team:Leicester City, Nation:GHA, Position:FW): 0
+Adama Traoré (Team:Fulham, Nation:ESP, Position:FW,MF): 0
 
 
 
 === Passes_Blocked ===
+Top 3 highest statistics:
+Alexis Mac Allister (Team:Liverpool, Nation:ARG, Position:MF): 49
+Antoine Semenyo (Team:Bournemouth, Nation:GHA, Position:FW): 47
+Tyrick Mitchell (Team:Crystal Palace, Nation:ENG, Position:DF): 44
 
-Top 3 highest:
-
-Alexis Mac Allister (Team:Liverpool,Nation:ARG,Position:MF): 49
-Antoine Semenyo (Team:Bournemouth,Nation:GHA,Position:FW): 47
-Tyrick Mitchell (Team:Crystal Palace,Nation:ENG,Position:DF): 44
-
-
-Top 3 lowest:
-
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0
-Albert Grønbaek (Team:Southampton,Nation:DEN,Position:FW,MF): 0
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0
+Top 3 lowest statistics:
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0
+Albert Grønbaek (Team:Southampton, Nation:DEN, Position:FW,MF): 0
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0
 
 
 
 === Interceptions ===
+Top 3 highest statistics:
+Antonee Robinson (Team:Fulham, Nation:USA, Position:DF): 53
+Ryan Gravenberch (Team:Liverpool, Nation:NED, Position:MF): 53
+Aaron Wan-Bissaka (Team:West Ham, Nation:ENG, Position:DF): 52
 
-Top 3 highest:
-
-Antonee Robinson (Team:Fulham,Nation:USA,Position:DF): 53
-Ryan Gravenberch (Team:Liverpool,Nation:NED,Position:MF): 53
-Aaron Wan-Bissaka (Team:West Ham,Nation:ENG,Position:DF): 52
-
-
-Top 3 lowest:
-
-Albert Grønbaek (Team:Southampton,Nation:DEN,Position:FW,MF): 0
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex Palmer (Team:Ipswich Town,Nation:ENG,Position:GK): 0
+Top 3 lowest statistics:
+Albert Grønbaek (Team:Southampton, Nation:DEN, Position:FW,MF): 0
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex Palmer (Team:Ipswich Town, Nation:ENG, Position:GK): 0
 
 
 
 === Touches ===
+Top 3 highest statistics:
+Virgil van Dijk (Team:Liverpool, Nation:NED, Position:DF): 2740
+Joško Gvardiol (Team:Manchester City, Nation:CRO, Position:DF): 2505
+Levi Colwill (Team:Chelsea, Nation:ENG, Position:DF): 2406
 
-Top 3 highest:
-
-Virgil van Dijk (Team:Liverpool,Nation:NED,Position:DF): 2740
-Joško Gvardiol (Team:Manchester City,Nation:CRO,Position:DF): 2505
-Levi Colwill (Team:Chelsea,Nation:ENG,Position:DF): 2406
-
-
-Top 3 lowest:
-
-Albert Grønbaek (Team:Southampton,Nation:DEN,Position:FW,MF): 38
-Odsonne Édouard (Team:Crystal Palace,Nation:FRA,Position:MF,FW): 45
-Ali Al Hamadi (Team:Ipswich Town,Nation:IRQ,Position:FW): 53
+Top 3 lowest statistics:
+Albert Grønbaek (Team:Southampton, Nation:DEN, Position:FW,MF): 38
+Odsonne Édouard (Team:Crystal Palace, Nation:FRA, Position:MF,FW): 45
+Ali Al Hamadi (Team:Ipswich Town, Nation:IRQ, Position:FW): 53
 
 
 
 === Touches_Defensive_Penalty_Area ===
+Top 3 highest statistics:
+Mark Flekken (Team:Brentford, Nation:NED, Position:GK): 1184
+Bernd Leno (Team:Fulham, Nation:GER, Position:GK): 972
+André Onana (Team:Manchester Utd, Nation:CMR, Position:GK): 951
 
-Top 3 highest:
-
-Mark Flekken (Team:Brentford,Nation:NED,Position:GK): 1184
-Bernd Leno (Team:Fulham,Nation:GER,Position:GK): 972
-André Onana (Team:Manchester Utd,Nation:CMR,Position:GK): 951
-
-
-Top 3 lowest:
-
-Emi Buendía (Team:Aston Villa,Nation:ARG,Position:MF,FW): 0
-Mathys Tel (Team:Tottenham,Nation:FRA,Position:FW): 0
-Callum Wilson (Team:Newcastle Utd,Nation:ENG,Position:FW): 1
+Top 3 lowest statistics:
+Emi Buendía (Team:Aston Villa, Nation:ARG, Position:MF,FW): 0
+Mathys Tel (Team:Tottenham, Nation:FRA, Position:FW): 0
+Callum Wilson (Team:Newcastle Utd, Nation:ENG, Position:FW): 1
 
 
 
 === Touches_Def_3rd ===
+Top 3 highest statistics:
+Mark Flekken (Team:Brentford, Nation:NED, Position:GK): 1471
+Jordan Pickford (Team:Everton, Nation:ENG, Position:GK): 1315
+André Onana (Team:Manchester Utd, Nation:CMR, Position:GK): 1235
 
-Top 3 highest:
-
-Mark Flekken (Team:Brentford,Nation:NED,Position:GK): 1471
-Jordan Pickford (Team:Everton,Nation:ENG,Position:GK): 1315
-André Onana (Team:Manchester Utd,Nation:CMR,Position:GK): 1235
-
-
-Top 3 lowest:
-
-Odsonne Édouard (Team:Crystal Palace,Nation:FRA,Position:MF,FW): 4
-Callum Wilson (Team:Newcastle Utd,Nation:ENG,Position:FW): 5
-Donyell Malen (Team:Aston Villa,Nation:NED,Position:FW): 5
+Top 3 lowest statistics:
+Odsonne Édouard (Team:Crystal Palace, Nation:FRA, Position:MF,FW): 4
+Callum Wilson (Team:Newcastle Utd, Nation:ENG, Position:FW): 5
+Donyell Malen (Team:Aston Villa, Nation:NED, Position:FW): 5
 
 
 
 === Touches_Mid_3rd ===
+Top 3 highest statistics:
+Virgil van Dijk (Team:Liverpool, Nation:NED, Position:DF): 1519
+Moisés Caicedo (Team:Chelsea, Nation:ECU, Position:MF): 1316
+William Saliba (Team:Arsenal, Nation:FRA, Position:DF): 1277
 
-Top 3 highest:
-
-Virgil van Dijk (Team:Liverpool,Nation:NED,Position:DF): 1519
-Moisés Caicedo (Team:Chelsea,Nation:ECU,Position:MF): 1316
-William Saliba (Team:Arsenal,Nation:FRA,Position:DF): 1277
-
-
-Top 3 lowest:
-
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0
-Danny Ward (Team:Leicester City,Nation:WAL,Position:GK): 0
-Fraser Forster (Team:Tottenham,Nation:ENG,Position:GK): 0
+Top 3 lowest statistics:
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0
+Danny Ward (Team:Leicester City, Nation:WAL, Position:GK): 0
+Fraser Forster (Team:Tottenham, Nation:ENG, Position:GK): 0
 
 
 
 === Touches_Att_3rd ===
+Top 3 highest statistics:
+Mohamed Salah (Team:Liverpool, Nation:EGY, Position:FW): 911
+Bruno Fernandes (Team:Manchester Utd, Nation:POR, Position:MF): 811
+Bryan Mbeumo (Team:Brentford, Nation:CMR, Position:FW): 798
 
-Top 3 highest:
-
-Mohamed Salah (Team:Liverpool,Nation:EGY,Position:FW): 911
-Bruno Fernandes (Team:Manchester Utd,Nation:POR,Position:MF): 811
-Bryan Mbeumo (Team:Brentford,Nation:CMR,Position:FW): 798
-
-
-Top 3 lowest:
-
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex Palmer (Team:Ipswich Town,Nation:ENG,Position:GK): 0
+Top 3 lowest statistics:
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex Palmer (Team:Ipswich Town, Nation:ENG, Position:GK): 0
 
 
 
 === Touches_Att_Pen ===
+Top 3 highest statistics:
+Mohamed Salah (Team:Liverpool, Nation:EGY, Position:FW): 291
+Erling Haaland (Team:Manchester City, Nation:NOR, Position:FW): 170
+Antoine Semenyo (Team:Bournemouth, Nation:GHA, Position:FW): 169
 
-Top 3 highest:
-
-Mohamed Salah (Team:Liverpool,Nation:EGY,Position:FW): 291
-Erling Haaland (Team:Manchester City,Nation:NOR,Position:FW): 170
-Antoine Semenyo (Team:Bournemouth,Nation:GHA,Position:FW): 169
-
-
-Top 3 lowest:
-
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex Palmer (Team:Ipswich Town,Nation:ENG,Position:GK): 0
+Top 3 lowest statistics:
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex Palmer (Team:Ipswich Town, Nation:ENG, Position:GK): 0
 
 
 
 === Take_Ons_Attempted ===
+Top 3 highest statistics:
+Mohammed Kudus (Team:West Ham, Nation:GHA, Position:FW,MF): 169
+Jeremy Doku (Team:Manchester City, Nation:BEL, Position:FW,MF): 166
+Morgan Rogers (Team:Aston Villa, Nation:ENG, Position:FW,MF): 136
 
-Top 3 highest:
+Top 3 lowest statistics:
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex Palmer (Team:Ipswich Town, Nation:ENG, Position:GK): 0
 
-Mohammed Kudus (Team:West Ham,Nation:GHA,Position:FW,MF): 169
-Jeremy Doku (Team:Manchester City,Nation:BEL,Position:FW,MF): 166
-Morgan Rogers (Team:Aston Villa,Nation:ENG,Position:FW,MF): 136
 
 
-Top 3 lowest:
+=== Take_Ons_Success_Percentage ===
+Top 3 highest statistics:
+Aaron Cresswell (Team:West Ham, Nation:ENG, Position:DF): 100.0
+Alisson (Team:Liverpool, Nation:BRA, Position:GK): 100.0
+Andy Irving (Team:West Ham, Nation:SCO, Position:MF): 100.0
 
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex Palmer (Team:Ipswich Town,Nation:ENG,Position:GK): 0
+Top 3 lowest statistics:
+Abdukodir Khusanov (Team:Manchester City, Nation:UZB, Position:DF): 0.0
+Albert Grønbaek (Team:Southampton, Nation:DEN, Position:FW,MF): 0.0
+Armel Bella Kotchap (Team:Southampton, Nation:GER, Position:DF): 0.0
+
+
+
+=== Take_Ons_Tackled_Percentage ===
+Top 3 highest statistics:
+Abdukodir Khusanov (Team:Manchester City, Nation:UZB, Position:DF): 100.0
+Albert Grønbaek (Team:Southampton, Nation:DEN, Position:FW,MF): 100.0
+Armel Bella Kotchap (Team:Southampton, Nation:GER, Position:DF): 100.0
+
+Top 3 lowest statistics:
+Aaron Cresswell (Team:West Ham, Nation:ENG, Position:DF): 0.0
+Alisson (Team:Liverpool, Nation:BRA, Position:GK): 0.0
+Andy Irving (Team:West Ham, Nation:SCO, Position:MF): 0.0
 
 
 
 === Carries ===
+Top 3 highest statistics:
+Joško Gvardiol (Team:Manchester City, Nation:CRO, Position:DF): 1605
+Virgil van Dijk (Team:Liverpool, Nation:NED, Position:DF): 1550
+Jan Paul van Hecke (Team:Brighton, Nation:NED, Position:DF): 1471
 
-Top 3 highest:
-
-Joško Gvardiol (Team:Manchester City,Nation:CRO,Position:DF): 1605
-Virgil van Dijk (Team:Liverpool,Nation:NED,Position:DF): 1550
-Jan Paul van Hecke (Team:Brighton,Nation:NED,Position:DF): 1471
-
-
-Top 3 lowest:
-
-Albert Grønbaek (Team:Southampton,Nation:DEN,Position:FW,MF): 18
-Odsonne Édouard (Team:Crystal Palace,Nation:FRA,Position:MF,FW): 23
-Kieran Tierney (Team:Arsenal,Nation:SCO,Position:DF,FW): 24
+Top 3 lowest statistics:
+Albert Grønbaek (Team:Southampton, Nation:DEN, Position:FW,MF): 18
+Odsonne Édouard (Team:Crystal Palace, Nation:FRA, Position:MF,FW): 23
+Kieran Tierney (Team:Arsenal, Nation:SCO, Position:DF,FW): 24
 
 
 
 === Total_Carrying_Distance ===
+Top 3 highest statistics:
+Jan Paul van Hecke (Team:Brighton, Nation:NED, Position:DF): 9213
+Joško Gvardiol (Team:Manchester City, Nation:CRO, Position:DF): 8403
+Virgil van Dijk (Team:Liverpool, Nation:NED, Position:DF): 7564
 
-Top 3 highest:
-
-Jan Paul van Hecke (Team:Brighton,Nation:NED,Position:DF): 9213
-Joško Gvardiol (Team:Manchester City,Nation:CRO,Position:DF): 8403
-Virgil van Dijk (Team:Liverpool,Nation:NED,Position:DF): 7564
-
-
-Top 3 lowest:
-
-Albert Grønbaek (Team:Southampton,Nation:DEN,Position:FW,MF): 79
-Harrison Reed (Team:Fulham,Nation:ENG,Position:MF): 95
-Kosta Nedeljković (Team:Aston Villa,Nation:SRB,Position:DF): 101
+Top 3 lowest statistics:
+Albert Grønbaek (Team:Southampton, Nation:DEN, Position:FW,MF): 79
+Harrison Reed (Team:Fulham, Nation:ENG, Position:MF): 95
+Kosta Nedeljković (Team:Aston Villa, Nation:SRB, Position:DF): 101
 
 
 
 === Progressive_Carrying_Distance ===
+Top 3 highest statistics:
+Jan Paul van Hecke (Team:Brighton, Nation:NED, Position:DF): 6356
+Joško Gvardiol (Team:Manchester City, Nation:CRO, Position:DF): 4655
+Rúben Dias (Team:Manchester City, Nation:POR, Position:DF): 4343
 
-Top 3 highest:
-
-Jan Paul van Hecke (Team:Brighton,Nation:NED,Position:DF): 6356
-Joško Gvardiol (Team:Manchester City,Nation:CRO,Position:DF): 4655
-Rúben Dias (Team:Manchester City,Nation:POR,Position:DF): 4343
-
-
-Top 3 lowest:
-
-Albert Grønbaek (Team:Southampton,Nation:DEN,Position:FW,MF): 15
-Massimo Luongo (Team:Ipswich Town,Nation:AUS,Position:MF): 25
-Harrison Reed (Team:Fulham,Nation:ENG,Position:MF): 27
+Top 3 lowest statistics:
+Albert Grønbaek (Team:Southampton, Nation:DEN, Position:FW,MF): 15
+Massimo Luongo (Team:Ipswich Town, Nation:AUS, Position:MF): 25
+Harrison Reed (Team:Fulham, Nation:ENG, Position:MF): 27
 
 
 
 === Progressive_Carries ===
+Top 3 highest statistics:
+Jeremy Doku (Team:Manchester City, Nation:BEL, Position:FW,MF): 166
+Kaoru Mitoma (Team:Brighton, Nation:JPN, Position:FW,MF): 135
+Sávio (Team:Manchester City, Nation:BRA, Position:FW,MF): 129
 
-Top 3 highest:
-
-Jeremy Doku (Team:Manchester City,Nation:BEL,Position:FW,MF): 166
-Kaoru Mitoma (Team:Brighton,Nation:JPN,Position:FW,MF): 135
-Sávio (Team:Manchester City,Nation:BRA,Position:FW,MF): 129
-
-
-Top 3 lowest:
-
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex Palmer (Team:Ipswich Town,Nation:ENG,Position:GK): 0
+Top 3 lowest statistics:
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex Palmer (Team:Ipswich Town, Nation:ENG, Position:GK): 0
 
 
 
 === Carries_Into_Final_Third ===
+Top 3 highest statistics:
+Alex Iwobi (Team:Fulham, Nation:NGA, Position:FW,MF): 90
+Joško Gvardiol (Team:Manchester City, Nation:CRO, Position:DF): 88
+Jeremy Doku (Team:Manchester City, Nation:BEL, Position:FW,MF): 77
 
-Top 3 highest:
-
-Alex Iwobi (Team:Fulham,Nation:NGA,Position:FW,MF): 90
-Joško Gvardiol (Team:Manchester City,Nation:CRO,Position:DF): 88
-Jeremy Doku (Team:Manchester City,Nation:BEL,Position:FW,MF): 77
-
-
-Top 3 lowest:
-
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0
-Albert Grønbaek (Team:Southampton,Nation:DEN,Position:FW,MF): 0
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0
+Top 3 lowest statistics:
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0
+Albert Grønbaek (Team:Southampton, Nation:DEN, Position:FW,MF): 0
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0
 
 
 
 === Carries_Into_Penalty_Area ===
+Top 3 highest statistics:
+Mohamed Salah (Team:Liverpool, Nation:EGY, Position:FW): 104
+Jeremy Doku (Team:Manchester City, Nation:BEL, Position:FW,MF): 77
+Sávio (Team:Manchester City, Nation:BRA, Position:FW,MF): 73
 
-Top 3 highest:
-
-Mohamed Salah (Team:Liverpool,Nation:EGY,Position:FW): 104
-Jeremy Doku (Team:Manchester City,Nation:BEL,Position:FW,MF): 77
-Sávio (Team:Manchester City,Nation:BRA,Position:FW,MF): 73
-
-
-Top 3 lowest:
-
-Aaron Cresswell (Team:West Ham,Nation:ENG,Position:DF): 0
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0
-Abdukodir Khusanov (Team:Manchester City,Nation:UZB,Position:DF): 0
+Top 3 lowest statistics:
+Aaron Cresswell (Team:West Ham, Nation:ENG, Position:DF): 0
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0
+Abdukodir Khusanov (Team:Manchester City, Nation:UZB, Position:DF): 0
 
 
 
 === Miscontrols ===
+Top 3 highest statistics:
+Mohamed Salah (Team:Liverpool, Nation:EGY, Position:FW): 98
+Liam Delap (Team:Ipswich Town, Nation:ENG, Position:FW): 92
+Morgan Rogers (Team:Aston Villa, Nation:ENG, Position:FW,MF): 88
 
-Top 3 highest:
-
-Mohamed Salah (Team:Liverpool,Nation:EGY,Position:FW): 98
-Liam Delap (Team:Ipswich Town,Nation:ENG,Position:FW): 92
-Morgan Rogers (Team:Aston Villa,Nation:ENG,Position:FW,MF): 88
-
-
-Top 3 lowest:
-
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0
-Alphonse Areola (Team:West Ham,Nation:FRA,Position:GK): 0
-Antonín Kinský (Team:Tottenham,Nation:CZE,Position:GK): 0
+Top 3 lowest statistics:
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0
+Alphonse Areola (Team:West Ham, Nation:FRA, Position:GK): 0
+Antonín Kinský (Team:Tottenham, Nation:CZE, Position:GK): 0
 
 
 
 === Dispossessions ===
+Top 3 highest statistics:
+Mohammed Kudus (Team:West Ham, Nation:GHA, Position:FW,MF): 79
+Bruno Guimarães (Team:Newcastle Utd, Nation:BRA, Position:MF): 69
+Dejan Kulusevski (Team:Tottenham, Nation:SWE, Position:MF,FW): 69
 
-Top 3 highest:
-
-Mohammed Kudus (Team:West Ham,Nation:GHA,Position:FW,MF): 79
-Bruno Guimarães (Team:Newcastle Utd,Nation:BRA,Position:MF): 69
-Dejan Kulusevski (Team:Tottenham,Nation:SWE,Position:MF,FW): 69
-
-
-Top 3 lowest:
-
-Aaron Cresswell (Team:West Ham,Nation:ENG,Position:DF): 0
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0
+Top 3 lowest statistics:
+Aaron Cresswell (Team:West Ham, Nation:ENG, Position:DF): 0
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0
 
 
 
 === Receiving ===
+Top 3 highest statistics:
+Virgil van Dijk (Team:Liverpool, Nation:NED, Position:DF): 1882
+Joško Gvardiol (Team:Manchester City, Nation:CRO, Position:DF): 1821
+Levi Colwill (Team:Chelsea, Nation:ENG, Position:DF): 1766
 
-Top 3 highest:
-
-Virgil van Dijk (Team:Liverpool,Nation:NED,Position:DF): 1882
-Joško Gvardiol (Team:Manchester City,Nation:CRO,Position:DF): 1821
-Levi Colwill (Team:Chelsea,Nation:ENG,Position:DF): 1766
-
-
-Top 3 lowest:
-
-Albert Grønbaek (Team:Southampton,Nation:DEN,Position:FW,MF): 21
-Odsonne Édouard (Team:Crystal Palace,Nation:FRA,Position:MF,FW): 26
-Neto (Team:Bournemouth,Nation:BRA,Position:GK): 28
+Top 3 lowest statistics:
+Albert Grønbaek (Team:Southampton, Nation:DEN, Position:FW,MF): 21
+Odsonne Édouard (Team:Crystal Palace, Nation:FRA, Position:MF,FW): 26
+Neto (Team:Bournemouth, Nation:BRA, Position:GK): 28
 
 
 
 === Progressive_Receiving ===
+Top 3 highest statistics:
+Mohamed Salah (Team:Liverpool, Nation:EGY, Position:FW): 384
+Bryan Mbeumo (Team:Brentford, Nation:CMR, Position:FW): 287
+Kaoru Mitoma (Team:Brighton, Nation:JPN, Position:FW,MF): 274
 
-Top 3 highest:
-
-Mohamed Salah (Team:Liverpool,Nation:EGY,Position:FW): 384
-Bryan Mbeumo (Team:Brentford,Nation:CMR,Position:FW): 287
-Kaoru Mitoma (Team:Brighton,Nation:JPN,Position:FW,MF): 274
-
-
-Top 3 lowest:
-
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex Palmer (Team:Ipswich Town,Nation:ENG,Position:GK): 0
+Top 3 lowest statistics:
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex Palmer (Team:Ipswich Town, Nation:ENG, Position:GK): 0
 
 
 
 === Fouls ===
+Top 3 highest statistics:
+Liam Delap (Team:Ipswich Town, Nation:ENG, Position:FW): 63
+Antoine Semenyo (Team:Bournemouth, Nation:GHA, Position:FW): 62
+João Gomes (Team:Wolves, Nation:BRA, Position:MF): 59
 
-Top 3 highest:
-
-Liam Delap (Team:Ipswich Town,Nation:ENG,Position:FW): 63
-Antoine Semenyo (Team:Bournemouth,Nation:GHA,Position:FW): 62
-João Gomes (Team:Wolves,Nation:BRA,Position:MF): 59
-
-
-Top 3 lowest:
-
-Albert Grønbaek (Team:Southampton,Nation:DEN,Position:FW,MF): 0
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0
-Alisson (Team:Liverpool,Nation:BRA,Position:GK): 0
+Top 3 lowest statistics:
+Albert Grønbaek (Team:Southampton, Nation:DEN, Position:FW,MF): 0
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0
+Alisson (Team:Liverpool, Nation:BRA, Position:GK): 0
 
 
 
 === Fouled ===
+Top 3 highest statistics:
+Bruno Guimarães (Team:Newcastle Utd, Nation:BRA, Position:MF): 93
+James Maddison (Team:Tottenham, Nation:ENG, Position:MF): 59
+John McGinn (Team:Aston Villa, Nation:SCO, Position:MF,FW): 59
 
-Top 3 highest:
-
-Bruno Guimarães (Team:Newcastle Utd,Nation:BRA,Position:MF): 93
-James Maddison (Team:Tottenham,Nation:ENG,Position:MF): 59
-John McGinn (Team:Aston Villa,Nation:SCO,Position:MF,FW): 59
-
-
-Top 3 lowest:
-
-Alex Palmer (Team:Ipswich Town,Nation:ENG,Position:GK): 0
-Alphonse Areola (Team:West Ham,Nation:FRA,Position:GK): 0
-Andrés García (Team:Aston Villa,Nation:ESP,Position:DF,MF): 0
+Top 3 lowest statistics:
+Alex Palmer (Team:Ipswich Town, Nation:ENG, Position:GK): 0
+Alphonse Areola (Team:West Ham, Nation:FRA, Position:GK): 0
+Andrés García (Team:Aston Villa, Nation:ESP, Position:DF,MF): 0
 
 
 
 === Offsides ===
+Top 3 highest statistics:
+Dominic Calvert-Lewin (Team:Everton, Nation:ENG, Position:FW): 27
+Jamie Vardy (Team:Leicester City, Nation:ENG, Position:FW): 22
+Chris Wood (Team:Nott'ham Forest, Nation:NZL, Position:FW): 21
 
-Top 3 highest:
-
-Dominic Calvert-Lewin (Team:Everton,Nation:ENG,Position:FW): 27
-Jamie Vardy (Team:Leicester City,Nation:ENG,Position:FW): 22
-Chris Wood (Team:Nott'ham Forest,Nation:NZL,Position:FW): 21
-
-
-Top 3 lowest:
-
-Aaron Cresswell (Team:West Ham,Nation:ENG,Position:DF): 0
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0
-Abdukodir Khusanov (Team:Manchester City,Nation:UZB,Position:DF): 0
+Top 3 lowest statistics:
+Aaron Cresswell (Team:West Ham, Nation:ENG, Position:DF): 0
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0
+Abdukodir Khusanov (Team:Manchester City, Nation:UZB, Position:DF): 0
 
 
 
 === Crosses ===
+Top 3 highest statistics:
+Pedro Porro (Team:Tottenham, Nation:ESP, Position:DF): 168
+Bruno Fernandes (Team:Manchester Utd, Nation:POR, Position:MF): 161
+Bryan Mbeumo (Team:Brentford, Nation:CMR, Position:FW): 157
 
-Top 3 highest:
-
-Pedro Porro (Team:Tottenham,Nation:ESP,Position:DF): 168
-Bruno Fernandes (Team:Manchester Utd,Nation:POR,Position:MF): 161
-Bryan Mbeumo (Team:Brentford,Nation:CMR,Position:FW): 157
-
-
-Top 3 lowest:
-
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0
-Alex Palmer (Team:Ipswich Town,Nation:ENG,Position:GK): 0
+Top 3 lowest statistics:
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0
+Alex Palmer (Team:Ipswich Town, Nation:ENG, Position:GK): 0
 
 
 
 === Recoveries ===
+Top 3 highest statistics:
+Ryan Christie (Team:Bournemouth, Nation:SCO, Position:MF): 182
+Bruno Fernandes (Team:Manchester Utd, Nation:POR, Position:MF): 179
+Moisés Caicedo (Team:Chelsea, Nation:ECU, Position:MF): 177
 
-Top 3 highest:
-
-Ryan Christie (Team:Bournemouth,Nation:SCO,Position:MF): 182
-Bruno Fernandes (Team:Manchester Utd,Nation:POR,Position:MF): 179
-Moisés Caicedo (Team:Chelsea,Nation:ECU,Position:MF): 177
-
-
-Top 3 lowest:
-
-Danny Ward (Team:Leicester City,Nation:WAL,Position:GK): 1
-Fraser Forster (Team:Tottenham,Nation:ENG,Position:GK): 1
-Hákon Rafn Valdimarsson (Team:Brentford,Nation:ISL,Position:GK): 1
+Top 3 lowest statistics:
+Danny Ward (Team:Leicester City, Nation:WAL, Position:GK): 1
+Fraser Forster (Team:Tottenham, Nation:ENG, Position:GK): 1
+Hákon Rafn Valdimarsson (Team:Brentford, Nation:ISL, Position:GK): 1
 
 
 
 === Aerial_Duels_Won ===
+Top 3 highest statistics:
+Dan Burn (Team:Newcastle Utd, Nation:ENG, Position:DF): 106
+Nathan Collins (Team:Brentford, Nation:IRL, Position:DF): 98
+Virgil van Dijk (Team:Liverpool, Nation:NED, Position:DF): 98
 
-Top 3 highest:
-
-Dan Burn (Team:Newcastle Utd,Nation:ENG,Position:DF): 106
-Nathan Collins (Team:Brentford,Nation:IRL,Position:DF): 98
-Virgil van Dijk (Team:Liverpool,Nation:NED,Position:DF): 98
-
-
-Top 3 lowest:
-
-Andrés García (Team:Aston Villa,Nation:ESP,Position:DF,MF): 0
-Antony (Team:Manchester Utd,Nation:BRA,Position:DF,MF): 0
-Billy Gilmour (Team:Brighton,Nation:SCO,Position:MF): 0
+Top 3 lowest statistics:
+Andrés García (Team:Aston Villa, Nation:ESP, Position:DF,MF): 0
+Antony (Team:Manchester Utd, Nation:BRA, Position:DF,MF): 0
+Billy Gilmour (Team:Brighton, Nation:SCO, Position:MF): 0
 
 
 
 === Aerial_Duels_Lost ===
+Top 3 highest statistics:
+Chris Wood (Team:Nott'ham Forest, Nation:NZL, Position:FW): 114
+Jean-Philippe Mateta (Team:Crystal Palace, Nation:FRA, Position:FW): 92
+Jørgen Strand Larsen (Team:Wolves, Nation:NOR, Position:FW): 85
 
-Top 3 highest:
+Top 3 lowest statistics:
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 0
+Albert Grønbaek (Team:Southampton, Nation:DEN, Position:FW,MF): 0
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 0
 
-Chris Wood (Team:Nott'ham Forest,Nation:NZL,Position:FW): 114
-Jean-Philippe Mateta (Team:Crystal Palace,Nation:FRA,Position:FW): 92
-Jørgen Strand Larsen (Team:Wolves,Nation:NOR,Position:FW): 85
 
 
-Top 3 lowest:
+=== Aerial_Duels_Wonpct ===
+Top 3 highest statistics:
+Aaron Ramsdale (Team:Southampton, Nation:ENG, Position:GK): 100.0
+Albert Grønbaek (Team:Southampton, Nation:DEN, Position:FW,MF): 100.0
+Alex McCarthy (Team:Southampton, Nation:ENG, Position:GK): 100.0
 
-Aaron Ramsdale (Team:Southampton,Nation:ENG,Position:GK): 0
-Albert Grønbaek (Team:Southampton,Nation:DEN,Position:FW,MF): 0
-Alex McCarthy (Team:Southampton,Nation:ENG,Position:GK): 0
+Top 3 lowest statistics:
+Andrés García (Team:Aston Villa, Nation:ESP, Position:DF,MF): 0.0
+Antony (Team:Manchester Utd, Nation:BRA, Position:DF,MF): 0.0
+Emi Buendía (Team:Aston Villa, Nation:ARG, Position:MF,FW): 0.0
+
 
