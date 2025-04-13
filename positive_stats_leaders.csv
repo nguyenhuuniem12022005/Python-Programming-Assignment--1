@@ -1,0 +1,61 @@
+Statistic,Best_Team,Value
+Goals_PerShot,Arsenal,0.15
+Take_Ons_Attempted,Arsenal,27.82
+Interceptions,Bournemouth,13.09
+Per_90_Minutes_xG,Bournemouth,0.19
+Save_Percentage,Bournemouth,79.33
+Shot_Creating_Actions_Per90,Bournemouth,2.62
+Aerial_Duels_Won,Brentford,25.9
+Aerial_Duels_Wonpct,Brentford,54.59
+Blocks,Brentford,20.05
+CleanSheet_Percentage,Brentford,58.35
+Crossed_Into_Penalty_Area,Brentford,3.65
+Minutes,Brentford,1525.0
+Playing_Time_Starts,Brentford,17.05
+Recoveries,Brentford,67.15
+Shots_Blocked,Brentford,8.15
+Touches_Def_3rd,Brentford,344.4
+Per_90_Minutes_xAG,Chelsea,0.14
+Passes_Blocked,Crystal Palace,13.14
+Tackles,Crystal Palace,30.38
+Tackles_Won,Crystal Palace,18.05
+Penalty_Save_Percentage,Everton,100.0
+Crosses,Fulham,31.86
+Per_90_Minutes_Gls,Fulham,0.2
+Shots_On_Target_Per90,Fulham,0.58
+Defensive_Actions_Attempted,Liverpool,26.1
+Expected_xAG,Liverpool,2.38
+Expected_xG,Liverpool,3.31
+Goal_Creating_Actions,Liverpool,6.0
+Goal_Creating_Actions_Per90,Liverpool,0.37
+Keypasses,Liverpool,19.52
+Passes_Into_Final_Third,Liverpool,61.71
+Passes_Into_Penalty_Area,Liverpool,16.9
+Per_90_Minutes_Ast,Liverpool,0.16
+Performance_Ast,Liverpool,2.57
+Performance_Gls,Liverpool,3.43
+Progression_PrgP,Liverpool,74.14
+Progression_PrgR,Liverpool,73.38
+Progressive_Passes,Liverpool,74.14
+Progressive_Receiving,Liverpool,73.38
+Receiving,Liverpool,705.0
+Shot_Creating_Actions,Liverpool,44.24
+Take_Ons_Success_Percentage,Liverpool,56.24
+Total_Passes_Completed,Liverpool,712.76
+Touches,Liverpool,1008.38
+Touches_Att_Pen,Liverpool,50.29
+Touches_Mid_3rd,Liverpool,455.67
+Carries,Manchester City,583.56
+Carries_Into_Final_Third,Manchester City,28.24
+Carries_Into_Penalty_Area,Manchester City,13.36
+Long_Passes_Completed_Percentage,Manchester City,61.21
+Medium_Passes_Completed_Percentage,Manchester City,89.64
+Progression_PrgC,Manchester City,37.6
+Progressive_Carries,Manchester City,37.6
+Progressive_Carrying_Distance,Manchester City,1824.24
+Short_Passe_Completed_Percentage,Manchester City,92.13
+Total_Passes_Completed_Percentage,Manchester City,86.74
+Touches_Att_3rd,Manchester City,318.04
+Fouled,Newcastle Utd,16.5
+Matches,Nott'ham Forest,22.71
+Shots_On_Target_Percentage,Nott'ham Forest,40.65
