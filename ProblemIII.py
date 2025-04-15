@@ -6,7 +6,7 @@ from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
 import seaborn as sns
-
+from sklearn.metrics import silhouette_score
 #  Read data
 df = pd.read_csv('results.csv')
 
@@ -42,6 +42,23 @@ numeric_filled = pd.DataFrame(imputer.fit_transform(numeric_df), columns=numeric
 #  Standardize data
 scaler = StandardScaler()
 scaled_data = scaler.fit_transform(numeric_filled)
+
+silhouette_scores = []
+for k in range(2, 11):
+    kmeans = KMeans(n_clusters=k, random_state=0, n_init=50)
+    cluster_labels = kmeans.fit_predict(scaled_data)
+    silhouette_avg = silhouette_score(scaled_data, cluster_labels)
+    silhouette_scores.append(silhouette_avg)
+
+#  Silhouette Score
+plt.figure(figsize=(8, 5))
+plt.plot(range(2, 11), silhouette_scores, marker='o', linestyle='--')
+plt.title('Silhouette Score for Optimal k')
+plt.xlabel('Number of Clusters (k)')
+plt.ylabel('Silhouette Score')
+plt.grid(True)
+plt.xticks(range(2, 11))
+plt.show()
 
 #  Elbow method to determine optimal number of clusters
 wcss = []
