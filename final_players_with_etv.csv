@@ -2,7 +2,7 @@ Player,ETV,Nation,Squad,Age,Position
 Aaron Ramsdale,€18.7M,ENG,Southampton,26-335,GK
 Aaron Wan-Bissaka,€29.7M,ENG,West Ham,27-139,DF
 Abdoulaye Doucouré,€5.8M,MLI,Everton,32-103,MF
-Adam Armstrong,,ENG,Southampton,28-063,"FW,MF"
+Adam Armstrong,€17.7M,ENG,Southampton,28-063,"FW,MF"
 Adam Smith,€1.5M,ENG,Bournemouth,33-350,DF
 Adam Wharton,€49.3M,ENG,Crystal Palace,20-316,MF
 Adama Traoré,€8.2M,ESP,Fulham,29-079,"FW,MF"
@@ -11,7 +11,7 @@ Alex Iwobi,€31.2M,NGA,Fulham,28-346,"FW,MF"
 Alexander Isak,€119.4M,SWE,Newcastle Utd,25-205,FW
 Alexis Mac Allister,€117M,ARG,Liverpool,26-111,MF
 Alisson,€24.5M,BRA,Liverpool,32-194,GK
-Alphonse Areola,,FRA,West Ham,32-046,GK
+Alphonse Areola,€11.6M,FRA,West Ham,32-046,GK
 Amad Diallo,€48.6M,CIV,Manchester Utd,22-277,"FW,MF"
 Amadou Onana,€64.4M,BEL,Aston Villa,23-241,MF
 Andreas Pereira,€18.9M,BRA,Fulham,29-103,MF
@@ -23,7 +23,7 @@ Anthony Gordon,€52.4M,ENG,Newcastle Utd,24-049,FW
 Antoine Semenyo,€45.4M,GHA,Bournemouth,25-097,FW
 Antonee Robinson,€42.7M,USA,Fulham,27-249,DF
 Archie Gray,€72.5M,ENG,Tottenham,19-033,"DF,MF"
-Arijanet Muric,,KVX,Ipswich Town,26-158,GK
+Arijanet Muric,€10.4M,KVX,Ipswich Town,26-158,GK
 Ashley Young,€1.3M,ENG,Everton,39-279,"DF,FW"
 Axel Tuanzebe,€4.3M,COD,Ipswich Town,27-151,DF
 Bart Verbruggen,€32M,NED,Brighton,22-239,GK
@@ -103,11 +103,11 @@ Harry Maguire,€13.8M,ENG,Manchester Utd,32-040,DF
 Harry Winks,€11.5M,ENG,Leicester City,29-071,MF
 Harvey Barnes,€42.6M,ENG,Newcastle Utd,27-126,FW
 Ibrahima Konaté,€57.2M,FRA,Liverpool,25-324,DF
-Idrissa Gana Gueye,,SEN,Everton,35-200,MF
-Igor,,BRA,Brighton,27-066,DF
+Idrissa Gana Gueye,€4.5M,SEN,Everton,35-200,MF
+Igor,€25M,BRA,Brighton,27-066,DF
 Iliman Ndiaye,€24.9M,SEN,Everton,25-039,FW
 Illia Zabarnyi,€55.1M,UKR,Bournemouth,22-225,DF
-Ismaila Sarr,,SEN,Crystal Palace,27-048,"MF,FW"
+Ismaila Sarr,€24.9M,SEN,Crystal Palace,27-048,"MF,FW"
 Issa Diop,€17.9M,FRA,Fulham,28-095,DF
 Jack Clarke,€19.4M,ENG,Ipswich Town,24-142,"FW,MF"
 Jack Harrison,€17.9M,ENG,Everton,28-145,FW
@@ -133,7 +133,7 @@ Jean-Philippe Mateta,€31.7M,FRA,Crystal Palace,27-290,FW
 Jean-Ricner Bellegarde,€21.3M,FRA,Wolves,26-291,"MF,FW"
 Jefferson Lerma,€12.8M,COL,Crystal Palace,30-171,"MF,DF"
 Jens Cajuste,€15.4M,SWE,Ipswich Town,25-247,MF
-Jeremy Doku,,BEL,Manchester City,22-322,"FW,MF"
+Jeremy Doku,€66.5M,BEL,Manchester City,22-322,"FW,MF"
 Jesper Lindstrøm,€24.4M,DEN,Everton,25-044,FW
 Joachim Andersen,€32.9M,DEN,Fulham,28-318,DF
 Joe Aribo,€8M,NGA,Southampton,28-267,"MF,DF"
@@ -163,7 +163,7 @@ Kieran Trippier,€4.5M,ENG,Newcastle Utd,34-207,DF
 Kobbie Mainoo,€54.8M,ENG,Manchester Utd,19-360,MF
 Konstantinos Mavropanos,€19.1M,GRE,West Ham,27-124,DF
 Kristoffer Ajer,€21.5M,NOR,Brentford,26-362,DF
-Kyle Walker,,ENG,Manchester City,34-321,DF
+Kyle Walker,€4.9M,ENG,Manchester City,34-321,DF
 Kyle Walker-Peters,€16.6M,ENG,Southampton,28-001,DF
 Leandro Trossard,€31.8M,BEL,Arsenal,30-131,FW
 Leif Davis,€28.4M,ENG,Ipswich Town,25-092,DF
@@ -182,16 +182,16 @@ Lucas Paquetá,€73.5M,BRA,West Ham,27-230,"MF,FW"
 Luis Díaz,€69.3M,COL,Liverpool,28-091,FW
 Luke Woolfenden,€2M,ENG,Ipswich Town,26-175,DF
 Mads Hermansen,€19.2M,DEN,Leicester City,24-277,GK
-Mads Roerslev,,DEN,Brentford,25-294,DF
+Mads Roerslev,€8.4M,DEN,Brentford,25-294,DF
 Malo Gusto,€36.1M,FRA,Chelsea,21-330,DF
 Manuel Akanji,€43.7M,SUI,Manchester City,29-269,DF
-Manuel Ugarte Ribeiro,,URU,Manchester Utd,24-003,MF
+Manuel Ugarte Ribeiro,€60.3M,URU,Manchester Utd,24-003,MF
 Marc Cucurella,€39.6M,ESP,Chelsea,26-266,DF
 Marc Guéhi,€48.9M,ENG,Crystal Palace,24-275,DF
 Marcos Senesi,€20.3M,ARG,Bournemouth,27-339,DF
 Marcus Rashford,€58.6M,ENG,Manchester Utd,27-165,"FW,MF"
 Marcus Tavernier,€24.4M,ENG,Bournemouth,26-023,"FW,MF"
-Mario Lemina,,GAB,Wolves,31-225,"MF,DF"
+Mario Lemina,€5.2M,GAB,Wolves,31-225,"MF,DF"
 Mark Flekken,€13.9M,NED,Brentford,31-305,GK
 Martin Ødegaard,€125.8M,NOR,Arsenal,26-118,MF
 Mateo Kovačić,€25.3M,CRO,Manchester City,30-343,MF
@@ -207,7 +207,7 @@ Maxence Lacroix,€25.8M,FRA,Crystal Palace,25-008,DF
 Micky van de Ven,€62M,NED,Tottenham,23-360,DF
 Mikel Merino,€39.7M,ESP,Arsenal,28-296,"MF,FW"
 Mikkel Damsgaard,€28.6M,DEN,Brentford,24-285,"MF,FW"
-Milos Kerkez,,HUN,Bournemouth,21-158,DF
+Milos Kerkez,€61.6M,HUN,Bournemouth,21-158,DF
 Mohamed Salah,€18.3M,EGY,Liverpool,32-303,FW
 Mohammed Kudus,€63M,GHA,West Ham,24-255,"FW,MF"
 Moisés Caicedo,€82.8M,ECU,Chelsea,23-163,MF
@@ -226,7 +226,7 @@ Noussair Mazraoui,€45.3M,MAR,Manchester Utd,27-151,DF
 Nélson Semedo,€8.3M,POR,Wolves,31-149,DF
 Ola Aina,€19.3M,NGA,Nott'ham Forest,28-188,DF
 Ollie Watkins,€63.2M,ENG,Aston Villa,29-105,FW
-Omari Hutchinson,,ENG,Ipswich Town,21-166,"MF,FW"
+Omari Hutchinson,€27.6M,ENG,Ipswich Town,21-166,"MF,FW"
 Orel Mangala,€24.4M,BEL,Everton,27-027,MF
 Pape Matar Sarr,€50.8M,SEN,Tottenham,22-212,MF
 Pau Torres,€46.1M,ESP,Aston Villa,28-088,DF
@@ -235,9 +235,9 @@ Pedro Neto,€60.4M,POR,Chelsea,25-036,FW
 Pedro Porro,€55.9M,ESP,Tottenham,25-213,DF
 Pervis Estupiñán,€35.4M,ECU,Brighton,27-083,DF
 Phil Foden,€99.8M,ENG,Manchester City,24-321,"MF,FW"
-Radu Drăgușin,,ROU,Tottenham,23-070,DF
-Rasmus Højlund,,DEN,Manchester Utd,22-069,FW
-Rayan Aït-Nouri,,ALG,Wolves,23-312,DF
+Radu Drăgușin,€28.4M,ROU,Tottenham,23-070,DF
+Rasmus Højlund,€60M,DEN,Manchester Utd,22-069,FW
+Rayan Aït-Nouri,€44M,ALG,Wolves,23-312,DF
 Raúl Jiménez,€5.2M,MEX,Fulham,33-344,FW
 Riccardo Calafiori,€49.3M,ITA,Arsenal,22-330,DF
 Rico Lewis,€62.7M,ENG,Manchester City,20-144,"DF,MF"
@@ -273,7 +273,7 @@ Tyler Dibling,€32M,ENG,Southampton,19-033,"FW,MF"
 Tyrick Mitchell,€25.1M,ENG,Crystal Palace,25-225,DF
 Tyrone Mings,€5.7M,ENG,Aston Villa,32-032,DF
 Valentino Livramento,€48.4M,ENG,Newcastle Utd,22-153,DF
-Victor Bernth Kristiansen,,DEN,Leicester City,22-119,DF
+Victor Bernth Kristiansen,€23.9M,DEN,Leicester City,22-119,DF
 Virgil van Dijk,€16.6M,NED,Liverpool,33-280,DF
 Vitaliy Mykolenko,€33.5M,UKR,Everton,25-320,DF
 Vitaly Janelt,€22.2M,GER,Brentford,26-339,MF
