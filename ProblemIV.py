@@ -31,33 +31,25 @@ def setup_driver():
 
 
 def clean_player_name(name):
-    """Chuẩn hóa tên cầu thủ để so sánh, xử lý cả trường hợp tên bị đảo ngược"""
+    """Standardize player name for comparison, including reversed names"""
     if pd.isna(name):
         return ""
 
-    # Lấy phần trước \n đầu tiên
     name = str(name).split('\n')[0].strip()
-
-    # Xóa các ký tự đặc biệt (giữ lại khoảng trắng, gạch ngang)
     name = ''.join(e for e in name if e.isalpha() or e in [' ', '-'])
-
-    # Chuyển về chữ thường
     name = name.lower()
 
-    # Xử lý đặc biệt cho một số cầu thủ
     special_cases = {
         'son heung-min': 'heung min son',
         'heung-min son': 'heung min son',
         'joao cancelo': 'cancelo joao',
-        # Thêm các trường hợp đặc biệt khác nếu cần
+        # Add more special cases if needed
     }
 
     if name in special_cases:
         return special_cases[name]
 
-    # Tách các từ trong tên và sắp xếp theo thứ tự alphabet
     sorted_name = ' '.join(sorted(name.split()))
-
     return sorted_name
 
 
@@ -145,15 +137,12 @@ def scrape_all_pages(total_pages=22):
 
 def prepare_local_data(csv_path='result.csv'):
     try:
-        # Đọc file CSV và chỉ giữ lại các cột cần thiết
         local_df = pd.read_csv(csv_path)
         columns_to_keep = ['Player', 'Nation', 'Squad', 'Age', 'Position']
 
-        # Kiểm tra xem các cột có tồn tại trong dataframe không
         existing_columns = [col for col in columns_to_keep if col in local_df.columns]
         local_df = local_df[existing_columns]
 
-        # Tạo cột Clean_Name để so sánh (đã sắp xếp các từ)
         local_df['Clean_Name'] = local_df['Player'].apply(clean_player_name)
 
         return local_df
@@ -164,7 +153,7 @@ def prepare_local_data(csv_path='result.csv'):
 
 def manually_assign_etv(df):
     """
-    Gán giá trị ETV thủ công cho các cầu thủ còn thiếu ETV
+    Manually assign ETV values for players missing ETV
     """
     if df.empty or 'ETV' not in df.columns:
         return df
@@ -172,55 +161,47 @@ def manually_assign_etv(df):
     df_filled = df.copy()
 
     manual_etv_mapping = {
-
         'Adam Armstrong': '€17.7M',
-        'Alphonse Areola' :'€11.6M',
-        'Arijanet Muric':'€10.4M',
-        'Idrissa Gana Gueye':'€4.5M',
-        'Igor' : '€25M',
-        'Ismaila Sarr':'€24.9M',
-        'Jeremy Doku':'€66.5M',
-        'Jurriën Timber':'€62.7M',
-        'Kyle Walker':'€4.9M',
-        'Mads Roerslev':'€8.4M',
-        'Manuel Ugarte Ribeiro':'€60.3M',
-        'Mario Lemina':'€5.2M',
-        'Milos Kerkez':'€61.6M',
-        'Omari Hutchinson':'€27.6M',
-        'Radu Drăgușin':'€28.4M',
-        'Rasmus Højlund':'€60M',
-        'Rayan Aït-Nouri':'€44M',
-        'Victor Bernth Kristiansen':'€23.9M'
+        'Alphonse Areola': '€11.6M',
+        'Arijanet Muric': '€10.4M',
+        'Idrissa Gana Gueye': '€4.5M',
+        'Igor': '€25M',
+        'Ismaila Sarr': '€24.9M',
+        'Jeremy Doku': '€66.5M',
+        'Jurriën Timber': '€62.7M',
+        'Kyle Walker': '€4.9M',
+        'Mads Roerslev': '€8.4M',
+        'Manuel Ugarte Ribeiro': '€60.3M',
+        'Mario Lemina': '€5.2M',
+        'Milos Kerkez': '€61.6M',
+        'Omari Hutchinson': '€27.6M',
+        'Radu Drăgușin': '€28.4M',
+        'Rasmus Højlund': '€60M',
+        'Rayan Aït-Nouri': '€44M',
+        'Victor Bernth Kristiansen': '€23.9M'
     }
 
-    # Chuẩn hóa tên trong mapping
     normalized_mapping = {clean_player_name(k): v for k, v in manual_etv_mapping.items()}
 
-    # Điền giá trị ETV thiếu
     for idx, row in df_filled.iterrows():
         if pd.isna(row['ETV']):
             clean_name = clean_player_name(row['Player'])
             if clean_name in normalized_mapping:
                 df_filled.at[idx, 'ETV'] = normalized_mapping[clean_name]
-                print(f"Đã gán thủ công ETV cho {row['Player']}: {normalized_mapping[clean_name]}")
+                print(f"Manually assigned ETV for {row['Player']}: {normalized_mapping[clean_name]}")
 
     return df_filled
-
-
 
 
 def merge_data(local_df, scraped_df):
     if local_df.empty or scraped_df.empty:
         return pd.DataFrame()
 
-    # Chuẩn hóa tên ở dữ liệu scraped (đã sắp xếp các từ)
     scraped_df['Clean_Name'] = scraped_df['Player'].apply(clean_player_name)
 
-    # Debug: In ra 5 tên đầu tiên từ mỗi nguồn
     print("\nSample local names:", local_df['Clean_Name'].head().tolist())
     print("Sample scraped names:", scraped_df['Clean_Name'].head().tolist())
 
-    # Merge dữ liệu
     merged_df = pd.merge(
         local_df,
         scraped_df[['Clean_Name', 'ETV']],
@@ -228,10 +209,8 @@ def merge_data(local_df, scraped_df):
         how='left'
     )
 
-    # Xóa cột Clean_Name không cần thiết
     merged_df = merged_df.drop('Clean_Name', axis=1)
 
-    # Sắp xếp lại cột ETV lên sau cột Player
     cols = merged_df.columns.tolist()
     cols = [cols[0]] + [cols[-1]] + cols[1:-1]
     merged_df = merged_df[cols]
@@ -255,10 +234,7 @@ def main():
         final_df = merge_data(local_data, scraped_data)
 
         if not final_df.empty:
-            # Gán ETV thủ công trước
             final_df = manually_assign_etv(final_df)
-
-
 
             print("\nFinal Merged Data (first 5 rows):")
             print(final_df.head())
@@ -267,11 +243,9 @@ def main():
             final_df.to_csv(output_file, index=False)
             print(f"\nData saved to '{output_file}'")
 
-            # Thống kê kết quả
             matched_count = final_df['ETV'].notna().sum()
             total_count = len(final_df)
-            print(
-                f"\nMatching results: {matched_count}/{total_count} players matched ({matched_count / total_count:.1%})")
+            print(f"\nMatching results: {matched_count}/{total_count} players matched ({matched_count / total_count:.1%})")
         else:
             print("\nNo matching players found between sources.")
     else:
