@@ -1,5 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
 
 # Load the data from CSV
 df = pd.read_csv('results.csv')
@@ -17,6 +18,12 @@ def convert_age(age_str):
 
 df['Age'] = df['Age'].apply(convert_age)
 
+
+attack_stats = ['Performance_Gls', 'Goals_PerShot', 'Performance_Ast']  
+defense_stats = ['Tackles', 'Interceptions', 'Blocks']  
+
+selected_stats = attack_stats + defense_stats
+
 # Function to plot histogram for a given statistic
 def plot_histogram(df, stat_name):
     plt.figure(figsize=(10, 6))
@@ -27,14 +34,10 @@ def plot_histogram(df, stat_name):
     plt.grid(True)
     plt.show()
 
-# Function to plot histograms for each statistic
-def plot_all_histograms(df):
-    stats =[df.columns[3]] + df.columns[4:].tolist()  # Assuming the first four columns are not statistics
+# Function to plot histograms for selected statistics
+def plot_selected_histograms(df, stats):
     for stat in stats:
         plot_histogram(df, stat)
-
-# Plot histograms for all statistics
-
 
 # Function to plot histogram for a given statistic and team
 def plot_team_histogram(df, stat_name, team):
@@ -47,16 +50,9 @@ def plot_team_histogram(df, stat_name, team):
     plt.grid(True)
     plt.show()
 
-
-# Function to plot histograms for all statistics for all teams
-def plot_all_team_histograms(df):
-    # Get all unique teams
+# Function to plot histograms for selected statistics for all teams
+def plot_selected_team_histograms(df, stats):
     teams = df['Squad'].unique()
-
-    # Get all statistics columns (assuming first 4 columns are not statistics)
-    stats = [df.columns[3]] + df.columns[4:].tolist()
-
-    # Loop through each team and each statistic
     for team in teams:
         print(f"\nAnalyzing team: {team}")
         for stat in stats:
@@ -65,10 +61,8 @@ def plot_all_team_histograms(df):
             except Exception as e:
                 print(f"Error plotting {stat} for {team}: {str(e)}")
 
+# Plot histograms for selected statistics across all data
+plot_selected_histograms(df, selected_stats)
 
-# Plot histograms for all statistics across all data
-plot_all_histograms(df)
-
-# Plot histograms for all statistics for all teams
-plot_all_team_histograms(df)
-
+# Plot histograms for selected statistics for all teams
+plot_selected_team_histograms(df, selected_stats)
