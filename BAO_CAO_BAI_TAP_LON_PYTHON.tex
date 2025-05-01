@@ -1,0 +1,180 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{vietnam}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\title{BÁO CÁO MÔN LẬP TRÌNH PYTHON}
+\author{NGUYỄN HỮU NIÊM \\ Mã Sinh Viên: B23DCCE076 \\ Lớp: D23CQCE04 - B}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+\includegraphics[width=1.4166666666666667in,height=1.84375in]{image1.png}
+\end{center}
+
+\begin{tabular}{ll}
+\textbf{Giảng viên bộ môn} & : KIM NGỌC BÁCH \\
+\textbf{Lớp} & : D23CQCE04 - B \\
+\textbf{Mã Sinh Viên} & : B23DCCE076 \\
+\textbf{Họ Và Tên} & : NGUYỄN HỮU NIÊM \\
+\end{tabular}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{Thu thập dữ liệu cầu thủ từ FBRef}
+
+\subsection{Mục tiêu}
+Thu thập dữ liệu thống kê cho các cầu thủ chơi hơn 90 phút tại Premier League mùa giải 2024-2025, từ trang \url{https://fbref.com}.
+
+\subsection{Phương pháp thực hiện}
+
+\subsubsection{Bước 1: Xác định nguồn dữ liệu}
+Dữ liệu được lấy từ các bảng thống kê trên trang:
+\begin{itemize}
+\item Thống kê cơ bản (Standard Stats)
+\item Thủ môn (Goalkeeping)
+\item Sút bóng (Shooting)
+\item Chuyền bóng (Passing)
+\item Tạo cơ hội (GCA/SCA)
+\item Phòng ngự (Defense)
+\item Kiểm soát bóng (Possession)
+\item Khác (Miscellaneous)
+\end{itemize}
+
+\subsubsection{Bước 2: Cài đặt và cấu hình Selenium}
+Sử dụng thư viện \texttt{webdriver\_manager} để tự động tải phiên bản phù hợp của ChromeDriver.
+
+\subsubsection{Bước 3: Trích xuất dữ liệu từ mỗi bảng}
+Xây dựng hàm \texttt{scrape\_table\_with\_selenium()} để:
+\begin{itemize}
+\item Truy cập vào từng URL chứa bảng thống kê
+\item Tìm bảng dữ liệu theo ID HTML
+\item Chuyển HTML thành DataFrame bằng \texttt{pandas.read\_html()}
+\item Xử lý tên cột
+\end{itemize}
+
+\subsubsection{Bước 4: Làm sạch và gộp dữ liệu}
+\begin{itemize}
+\item Chuẩn hóa tên cầu thủ và đội bóng
+\item Gộp bảng theo cột Player và Squad bằng \texttt{pd.merge()}
+\item Lọc cầu thủ có thời gian thi đấu > 90 phút
+\end{itemize}
+
+\subsection{Kết quả}
+Dữ liệu đã thu thập được lưu vào file \texttt{results.csv}.
+
+\subsection{Nhận xét}
+\begin{itemize}
+\item Dữ liệu phức tạp với nhiều bảng khác nhau
+\item Cần sử dụng Selenium do trang sử dụng JavaScript
+\item Quan trọng việc chuẩn hóa tên cột và xử lý dữ liệu thiếu
+\end{itemize}
+
+\section{Phân tích thống kê và trực quan hóa dữ liệu}
+
+\subsection{Mục tiêu}
+Phân tích thống kê mô tả và trực quan hóa dữ liệu để tìm hiểu xu hướng, phân phối và hiệu suất của các cầu thủ.
+
+\subsection{Phương pháp thực hiện}
+
+\subsubsection{Bước 1: Tính top 3 cầu thủ theo từng chỉ số}
+Tìm 3 cầu thủ có giá trị cao nhất và thấp nhất cho mỗi chỉ số.
+
+\subsubsection{Bước 2: Thống kê mô tả theo đội}
+Tính toán giá trị trung bình, trung vị, độ lệch chuẩn cho mỗi chỉ số.
+
+\subsubsection{Bước 3: Trực quan hóa dữ liệu bằng biểu đồ Histogram}
+Vẽ histogram cho các chỉ số tấn công và phòng ngự.
+
+\subsection{Kết quả}
+Xuất ra các file:
+\begin{itemize}
+\item \texttt{top\_3.txt}
+\item \texttt{results2.csv}
+\item \texttt{best\_teams\_per\_statistic.csv}
+\end{itemize}
+
+\subsection{Nhận xét}
+Phân tích cho thấy sự khác biệt rõ rệt giữa các đội bóng về khả năng ghi bàn, phòng ngự.
+
+\section{Phân cụm cầu thủ với thuật toán K-means}
+
+\subsection{Mục tiêu}
+Phân loại các cầu thủ thành các nhóm có phong cách chơi tương đồng.
+
+\subsection{Phương pháp thực hiện}
+
+\subsubsection{Bước 1: Tiền xử lý dữ liệu}
+Chuẩn hóa cột 'Age', loại bỏ các cột mô tả, xử lý giá trị thiếu.
+
+\subsubsection{Bước 2: Xác định số lượng cụm tối ưu}
+Sử dụng Elbow Method và Silhouette Score, xác định k = 8.
+
+\subsubsection{Bước 3: Áp dụng thuật toán K-means}
+Phân cụm cầu thủ thành 8 nhóm.
+
+\subsection{Kết quả}
+Các cụm thể hiện rõ sự khác biệt về phong cách chơi.
+
+\subsection{Nhận xét}
+Phân cụm giúp phát hiện các kiểu mẫu cầu thủ phổ biến, hỗ trợ ứng dụng như gợi ý chuyển nhượng.
+
+\section{Dự đoán giá trị cầu thủ}
+
+\subsection{Mục tiêu}
+Kết hợp dữ liệu thống kê kỹ thuật với giá trị chuyển nhượng ước tính (ETV).
+
+\subsection{Phương pháp thực hiện}
+
+\subsubsection{Giai đoạn 1: Thu thập và chuẩn hóa dữ liệu ETV}
+Sử dụng Selenium để thu thập dữ liệu từ \url{footballtransfers.com}.
+
+\subsubsection{Giai đoạn 2: Ghép nối dữ liệu}
+Ghép nối dữ liệu thống kê với ETV bằng \texttt{pandas.merge()}.
+
+\subsubsection{Giai đoạn 3: Làm sạch và xử lý dữ liệu}
+Xử lý cột 'ETV', chuẩn hóa dữ liệu, chia tập huấn luyện và kiểm tra.
+
+\subsection{Kết quả}
+Tạo thành công file \texttt{results\_with\_etv.csv} với đầy đủ thông tin.
+
+\subsection{Nhận xét}
+Việc chuẩn hóa tên cầu thủ là quan trọng để ghép nối chính xác.
+
+\section{Kết luận và hướng phát triển}
+
+\subsection{Tổng kết quá trình thực hiện}
+Xây dựng thành công quy trình phân tích và định giá cầu thủ.
+
+\subsection{Hiệu quả mô hình}
+Mô hình Gradient Boosting Regressor đạt kết quả tốt nhất:
+\begin{itemize}
+\item R² = 0.6958
+\item RMSE = 0.4314
+\end{itemize}
+
+\subsection{Hạn chế}
+\begin{itemize}
+\item Dữ liệu ETV có thể thay đổi theo thời gian
+\item Một số đặc trưng chưa được khai thác sâu
+\end{itemize}
+
+\subsection{Hướng phát triển}
+\begin{itemize}
+\item Mở rộng với nhiều mùa giải
+\item Bổ sung thêm đặc trưng
+\item Triển khai hệ thống web dashboard
+\end{itemize}
+
+\end{document}
