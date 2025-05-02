@@ -60,6 +60,36 @@ The \texttt{webdriver\_manager} library is used to automatically download the co
 The browser runs in headless mode to optimize performance and avoid displaying a window during data collection.
 
 \subsubsection{Step 3: Extract Data from Each Table}
+\begin{verbatim}
+def scrape_table_with_selenium(url, table_id):
+    try:
+        print(f"Scraping {url}...")
+        driver.get(url)
+        time.sleep(5)  # Increased wait time
+
+        # Wait for table to load
+        table = driver.find_element(By.ID, table_id)
+        html = table.get_attribute('outerHTML')
+
+        # Use StringIO to avoid the FutureWarning
+        df = pd.read_html(StringIO(html))[0]
+
+        # Clean multi-index columns
+        if isinstance(df.columns, pd.MultiIndex):
+            df.columns = ['_'.join(col).strip() for col in df.columns.values]
+
+        # Standardize column names
+        df.columns = df.columns.str.replace(r'%', 'pct', regex=True)
+        df.columns = df.columns.str.replace(r'[^a-zA-Z0-9_]', '_', regex=True)
+
+        return df
+
+    except Exception as e:
+        print(f"Error scraping {url}: {str(e)}")
+        return None
+    
+\end{verbatim}
+
 A function named \texttt{scrape\_table\_with\_selenium()} was built to:
 \begin{itemize}
 \item Navigate to each URL containing the statistical table
@@ -212,7 +242,9 @@ This section aims to categorize players in the 2024–2025 Premier League into g
 \subsubsection{Step 2: Determining the Optimal Number of Clusters}
 \begin{itemize}
     \item \textbf{Elbow Method:} Plot the Within-Cluster Sum of Squares (WCSS) to identify the “elbow point.”
+    \includegraphics[width=2.8in,height=2in]{ProblemIII-elbow.png}
     \item \textbf{Silhouette Score:} Evaluate the quality of cluster separation for $k$ ranging from 2 to 10.
+     \includegraphics[width=2.8in,height=2in]{ProblemIII-Silhouette.png}
     \item Both methods indicate that $k = 8$ is the most appropriate number of clusters.
 \end{itemize}
 
@@ -281,12 +313,65 @@ The objective of this section is to combine players' technical statistics with t
 \subsubsection{Stage 3: Cleaning and Preparing Training Data}
 \begin{itemize}
     \item The \texttt{ETV} column (e.g., ``66.5M'') was converted to float by removing special characters.
+\begin{verbatim}
+df['ETV'] = df['ETV'].str.replace(r'[€M]', '', regex=True).astype(float)
+df['ETV'] = np.clip(df['ETV'], df['ETV'].quantile(0.05), df['ETV'].quantile(0.95))
+df['ETV'] = np.log1p(df['ETV'])
+    
+\end{verbatim}
     \item Clipping (5\% and 95\%) and log transformation (\texttt{log1p}) were applied to reduce the impact of outliers.
     \item The \texttt{Age} column was normalized from ``years-days'' format to a single float.
+\begin{verbatim}
+def convert_age(age):
+    try:
+        if isinstance(age, (int, float)):
+            return float(age)
+        if '-' in str(age):
+            y, d = map(int, str(age).split('-'))
+            return y + d / 365
+        return float(age)
+    except:
+        return np.nan
+
+df['Age'] = df['Age'].apply(convert_age)
+df['Age'] = df['Age'].fillna(df['Age'].median()).round(1)
+    
+\end{verbatim}
     \item Remaining numerical features were cast to float and missing values were filled with zero.
     \item Irrelevant columns such as \texttt{Player}, \texttt{Nation}, \texttt{Squad}, and \texttt{Position} were removed.
+\begin{verbatim}
+def engineer_features(df):
+    X = df.drop(columns=['ETV', 'Player', 'Nation', 'Squad'])
+    y = df['ETV']
+    if 'Position' in X.columns:
+        X = X.drop(columns=['Position'])
+    return X, y
+
+X, y = engineer_features(df)
+    
+\end{verbatim}
     \item The dataset was split into training (80\%) and testing (20\%) sets using \texttt{train\_test\_split} from \texttt{scikit-learn}.
 \end{itemize}
+
+
+\subsubsection{Modeling and Evaluation}
+Several machine learning models were trained to predict the log-transformed ETV values, including:
+\begin{itemize}
+    \item \textbf{Linear Regression}
+    \item \textbf{Random Forest Regressor}
+    \item \textbf{Gradient Boosting Regressor}
+\end{itemize}
+
+Among them, Gradient Boosting Regressor achieved the best results on the test set:
+\begin{itemize}
+    \item $R^2$: 0.6958
+    \item RMSE: 0.4314
+    \item MAE: 0.3451
+    \item Spearman Rank Correlation: 0.7955
+\end{itemize}
+
+Feature importance was also extracted to understand the most influential attributes in player valuation.
+
 
 \subsection{Tools and Libraries Used}
 \begin{itemize}
@@ -317,6 +402,16 @@ The project successfully developed a system for analyzing and estimating the val
 \end{itemize}
 
 \subsection{Model Efficiency and Achieved Results}
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+\textbf{Model} & \textbf{R²} & \textbf{RMSE} & \textbf{MAE} & \textbf{Spearman} \\
+\hline
+Linear Regression & 0.594  & 0.4948 & 0.4137 &  0.7846  \\
+Random Forest     & 0.6661 & 0.4520 & 0.3512  & 0.7497  \\
+Gradient Boosting & \textbf{0.6958} & \textbf{0.4314} & \textbf{0.3451} & \textbf{0.7955} \\
+\hline
+\end{tabular}
+
 Among the models implemented, the Gradient Boosting Regressor yielded the best performance on the test set with the following metrics:
 \begin{itemize}
     \item $R^2 = 0.6958$
@@ -348,6 +443,59 @@ These results indicate that the model can predict player values with relatively 
     \item Deploy a web application or interactive dashboard that allows users to input player data and receive real-time ETV predictions.
     \item Experiment with advanced models such as XGBoost, LightGBM, or deep learning approaches.
 \end{itemize}
+
+
+\section*{Appendix}
+
+\subsection*{A. Data Sources}
+\begin{itemize}
+    \item Player statistics: \url{https://fbref.com/en/comps/9/Premier-League-Stats}
+    \item Estimated Transfer Values (ETV): \url{https://www.footballtransfers.com}
+\end{itemize}
+
+\subsection*{B. Key Technical Features Used}
+\begin{itemize}
+    \item Offensive: Goals, Assists, Expected Goals (xG), Shots on Target, xG per 90 minutes
+    \item Defensive: Tackles, Interceptions, Blocks, Clearances
+    \item Possession: Touches, Carries, Progressive Carries, Passing Accuracy
+    \item Others: Minutes Played, Age (normalized), Positions (encoded)
+\end{itemize}
+
+\subsection*{C. Model Performance Summary}
+\begin{center}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Model} & \textbf{R\textsuperscript{2}} & \textbf{RMSE} & \textbf{MAE} & \textbf{Spearman} \\
+\midrule
+Linear Regression & 0.5940 & 0.4984 & 0.4137 & 0.7846 \\
+Random Forest     & 0.6661 & 0.4520 & 0.3512 & 0.7497 \\
+Gradient Boosting & \textbf{0.6958} & \textbf{0.4314} & \textbf{0.3451} & \textbf{0.7955} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection*{D. Tools and Libraries}
+\begin{itemize}
+    \item \textbf{Selenium} – Web scraping from dynamic websites
+    \item \textbf{pandas, numpy} – Data manipulation and numerical computation
+    \item \textbf{scikit-learn} – Machine learning models, preprocessing, evaluation
+    \item \textbf{fuzzywuzzy} – Fuzzy string matching for player name alignment
+    \item \textbf{matplotlib, seaborn} – Data visualization
+\end{itemize}
+
+\newpage
+\section*{References}
+
+\begin{itemize}
+    \item FBRef. Premier League Player Stats. \url{https://fbref.com/en/comps/9/Premier-League-Stats}
+    \item FootballTransfers. Estimated Transfer Values. \url{https://www.footballtransfers.com}
+    \item scikit-learn: Machine Learning in Python. \url{https://scikit-learn.org/stable/}
+    \item pandas Documentation. \url{https://pandas.pydata.org/}
+    \item Selenium Python Docs. \url{https://selenium-python.readthedocs.io/}
+    \item matplotlib Documentation. \url{https://matplotlib.org/}
+    \item seaborn Documentation. \url{https://seaborn.pydata.org/}
+\end{itemize}
+
 
 
 \end{document}
