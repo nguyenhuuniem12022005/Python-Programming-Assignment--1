@@ -1,14 +1,12 @@
-import pandas as pd
+# Read data from CSV files
+df_etv = pd.read_csv('final_players_with_etv.csv')  # File containing the 'etv' column
+df_results = pd.read_csv('results.csv')  # File containing the results
 
-# Đọc dữ liệu từ các file CSV
-df_etv = pd.read_csv('final_players_with_etv.csv')  # File chứa cột 'etv'
-df_results = pd.read_csv('results.csv')  # File chứa kết quả
-
-# Giả sử bạn có cột chung 'player_id' hoặc 'player_name' giữa hai file
-# Hãy thay 'Player' bằng cột chung của bạn (nếu có)
+# Assume you have a common column 'player_id' or 'player_name' between the two files
+# Replace 'Player' with your common column (if any)
 df_merged = pd.merge(df_results, df_etv[['Player', 'ETV']], on='Player', how='inner')
 
-# Lưu kết quả vào file CSV mới
+# Save the results to a new CSV file
 df_merged.to_csv('results_with_etv.csv', index=False)
 
-print("Cột 'etv' đã được thêm vào và lưu thành công vào 'results_with_etv.csv'.")
+print("The 'etv' column has been added and successfully saved to 'results_with_etv.csv'.")
