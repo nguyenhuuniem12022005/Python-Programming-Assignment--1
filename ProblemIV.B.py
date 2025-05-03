@@ -9,6 +9,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
 from scipy import stats
+from sklearn.feature_selection import SelectKBest, mutual_info_regression, f_regression
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -57,28 +58,33 @@ X, y = engineer_features(df)
 # Step 5: Encoding - already handled
 
 # Step 6: Split data
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
+np.random.seed(0)
 
 # Step 7: Train and Evaluate Models
-def evaluate_model(model, name):
+def evaluate_model(model, name, selection_method='mutual_info', k_features=40):
+    # Select feature selection method
+    if selection_method == 'mutual_info':
+        def mi_fixed(X, y):
+            np.random.seed(0)  # Fix seed for MI
+            return mutual_info_regression(X, y, random_state=0)
+        selector = SelectKBest(score_func=mutual_info_regression, k=k_features)
+    elif selection_method == 'correlation':
+        selector = SelectKBest(score_func=f_regression, k=k_features)
+    else:
+        raise ValueError("Choose 'mutual_info' or 'correlation'")
+
     pipeline = Pipeline([
         ('scaler', RobustScaler()),
-        ('selector', RFE(estimator=RandomForestRegressor(n_estimators=120), n_features_to_select=40)),
+        ('selector', selector),  # Replace RFE with SelectKBest
         ('model', model)
     ])
+
     pipeline.fit(X_train, y_train)
     y_train_pred = pipeline.predict(X_train)
     y_test_pred = pipeline.predict(X_test)
 
-    # RFE helps remove noise:
-    # Removes features that contribute little, helping the model:
-    # - Reduce overfitting.
-    # - Become more interpretable and deployable.
-    # Random Forest is used as RFE estimator because:
-    # - It provides solid feature importance scores from multiple decision trees.
-    # - It is stable and less sensitive to outliers.
-
-    print(f"\n{name} Results:")
+    print(f"\n{name} Results ({selection_method} feature selection):")
     print("Train:")
     print(f"  R2 Score: {r2_score(y_train, y_train_pred):.4f}")
     print(f"  RMSE: {np.sqrt(mean_squared_error(y_train, y_train_pred)):.4f}")
@@ -91,147 +97,215 @@ def evaluate_model(model, name):
     print(f"  MAE: {mean_absolute_error(y_test, y_test_pred):.4f}")
     print(f"  Spearman: {stats.spearmanr(y_test, y_test_pred)[0]:.4f}")
 
-    # Feature Importance
-    selector = pipeline.named_steps['selector']
-    selected_features = X_train.columns[selector.get_support()]
-    if hasattr(pipeline.named_steps['model'], 'feature_importances_'):
-        importances = pipeline.named_steps['model'].feature_importances_
-        feature_importance = pd.Series(importances, index=selected_features).sort_values(ascending=False)
-        print("\nTop 20 Important Features:")
-        print(feature_importance.head(20))
-
-# Linear Regression
-evaluate_model(LinearRegression(), "Linear Regression")
-
-# Gradient Boosting
-evaluate_model(GradientBoostingRegressor(
-    n_estimators=300,
-    learning_rate=0.09,
-    max_depth=3,
-    min_samples_split=20,
-    min_samples_leaf=10,
-    subsample=0.7,
-    validation_fraction=0.2,
-    n_iter_no_change=20,
-    random_state=42), "Gradient Boosting")
-
-# Random Forest
-evaluate_model(RandomForestRegressor(
-    n_estimators=80,
-    max_depth=4,
-    min_samples_split=20,
-    random_state=42), "Random Forest")
+    # Show selected features
+    selected_features = X_train.columns[pipeline.named_steps['selector'].get_support()]
+    print(f"\nTop {k_features} Features selected by {selection_method}:")
+    print(selected_features.tolist())
 
 
-'''Linear Regression Results:
+methods = ['mutual_info', 'correlation']
+
+for method in methods:
+    print(f"\n{'=' * 50}")
+    print(f"EVALUATION WITH FEATURE SELECTION METHOD: {method.upper()}")
+    print(f"{'=' * 50}")
+
+    # Linear Regression
+    evaluate_model(LinearRegression(), "Linear Regression", selection_method=method)
+
+    # Gradient Boosting
+    evaluate_model(GradientBoostingRegressor(
+        n_estimators=300,
+        learning_rate=0.09,
+        max_depth=3,
+        min_samples_split=20,
+        min_samples_leaf=10,
+        subsample=0.7,
+        validation_fraction=0.2,
+        n_iter_no_change=20,
+        random_state=0
+    ), "Gradient Boosting", selection_method=method)
+
+    # Random Forest
+    evaluate_model(RandomForestRegressor(
+        n_estimators=80,
+        max_depth=4,
+        min_samples_split=20,
+        random_state=0
+    ), "Random Forest", selection_method=method)
+
+'''
+==================================================
+EVALUATION WITH FEATURE SELECTION METHOD: MUTUAL_INFO
+==================================================
+
+Linear Regression Results (mutual_info feature selection):
 Train:
-  R2 Score: 0.7106
-  RMSE: 0.4049
-  MAE: 0.3191
-  Spearman: 0.8442
+  R2 Score: 0.7063
+  RMSE: 0.4069
+  MAE: 0.3240
+  Spearman: 0.8404
 Test:
-  R2 Score: 0.5940
-  RMSE: 0.4984
-  MAE: 0.4137
-  Spearman: 0.7846
+  R2 Score: 0.6547
+  RMSE: 0.4706
+  MAE: 0.3760
+  Spearman: 0.8016
 
-Gradient Boosting Results:
+Top 40 Features selected by mutual_info:
+['Age', 'Performance_Gls', 'Performance_Ast', 'Expected_xG', 'Expected_xAG', 'Progression_PrgC', 'Progression_PrgP', 'Progression_PrgR', 'Per_90_Minutes_Ast', 'Goals_Against_Per90', 'Save_Percentage', 'CleanSheet_Percentage', 'Total_Passes_Completed_Percentage', 'Medium_Passes_Completed_Percentage', 'Keypasses', 'Passes_Into_Penalty_Area', 'Progressive_Passes', 'Shot_Creating_Actions', 'Goal_Creating_Actions', 'Goal_Creating_Actions_Per90', 'Defensive_Actions_Lost', 'Shots_Blocked', 'Touches_Defensive_Penalty_Area', 'Touches_Mid_3rd', 'Touches_Att_3rd', 'Touches_Att_Pen', 'Take_Ons_Tackled_Percentage', 'Carries', 'Total_Carrying_Distance', 'Progressive_Carrying_Distance', 'Progressive_Carries', 'Carries_Into_Final_Third', 'Carries_Into_Penalty_Area', 'Dispossessions', 'Receiving', 'Progressive_Receiving', 'Fouled', 'Offsides', 'Crosses', 'Recoveries']
+
+Gradient Boosting Results (mutual_info feature selection):
 Train:
-  R2 Score: 0.8324
-  RMSE: 0.3081
-  MAE: 0.2312
-  Spearman: 0.9095
+  R2 Score: 0.8140
+  RMSE: 0.3238
+  MAE: 0.2467
+  Spearman: 0.9002
 Test:
-  R2 Score: 0.6958
-  RMSE: 0.4314
-  MAE: 0.3451
-  Spearman: 0.7955
+  R2 Score: 0.7003
+  RMSE: 0.4383
+  MAE: 0.3437
+  Spearman: 0.8308
 
-Top 20 Important Features:
-Age                                   0.453779
-Carries                               0.040307
-Expected_xG                           0.039020
-Shots_Blocked                         0.038917
-Total_Carrying_Distance               0.032285
-Per_90_Minutes_xG                     0.032266
-Take_Ons_Success_Percentage           0.028823
-Touches_Att_Pen                       0.027820
-Touches_Att_3rd                       0.025993
-Touches_Def_3rd                       0.025525
-Shots_On_Target_Per90                 0.022617
-Progression_PrgP                      0.020743
-Minutes                               0.020648
-Aerial_Duels_Wonpct                   0.019053
-Per_90_Minutes_Ast                    0.015598
-Medium_Passes_Completed_Percentage    0.015423
-Matches                               0.015089
-Total_Passes_Completed_Percentage     0.013819
-Long_Passes_Completed_Percentage      0.013063
-Short_Passe_Completed_Percentage      0.012776
-dtype: float64
+Top 40 Features selected by mutual_info:
+['Age', 'Performance_Gls', 'Performance_Ast', 'Expected_xG', 'Expected_xAG', 'Progression_PrgC', 'Progression_PrgP', 'Progression_PrgR', 'Per_90_Minutes_Ast', 'Goals_Against_Per90', 'Save_Percentage', 'CleanSheet_Percentage', 'Total_Passes_Completed_Percentage', 'Medium_Passes_Completed_Percentage', 'Keypasses', 'Passes_Into_Penalty_Area', 'Progressive_Passes', 'Shot_Creating_Actions', 'Goal_Creating_Actions', 'Goal_Creating_Actions_Per90', 'Defensive_Actions_Lost', 'Shots_Blocked', 'Touches_Defensive_Penalty_Area', 'Touches_Mid_3rd', 'Touches_Att_3rd', 'Touches_Att_Pen', 'Take_Ons_Tackled_Percentage', 'Carries', 'Total_Carrying_Distance', 'Progressive_Carrying_Distance', 'Progressive_Carries', 'Carries_Into_Final_Third', 'Carries_Into_Penalty_Area', 'Dispossessions', 'Receiving', 'Progressive_Receiving', 'Fouled', 'Offsides', 'Crosses', 'Recoveries']
 
-Random Forest Results:
+Random Forest Results (mutual_info feature selection):
 Train:
-  R2 Score: 0.7640
-  RMSE: 0.3657
-  MAE: 0.2862
-  Spearman: 0.8789
+  R2 Score: 0.7614
+  RMSE: 0.3667
+  MAE: 0.2899
+  Spearman: 0.8734
 Test:
-  R2 Score: 0.6661
-  RMSE: 0.4520
-  MAE: 0.3512
-  Spearman: 0.7497
+  R2 Score: 0.6452
+  RMSE: 0.4770
+  MAE: 0.3865
+  Spearman: 0.8053
 
-Top 20 Important Features:
-Age                                  0.573254
-Total_Carrying_Distance              0.063013
-Progressive_Carrying_Distance        0.046141
-Touches_Att_3rd                      0.033295
-Touches_Att_Pen                      0.026146
-Matches                              0.019381
-Carries                              0.018303
-Per_90_Minutes_xG                    0.016485
-Shot_Creating_Actions                0.014218
-Expected_xG                          0.013891
-Per_90_Minutes_Gls                   0.012210
-Total_Passes_Completed_Percentage    0.011792
-Progressive_Receiving                0.011675
-Shots_Blocked                        0.010099
-Take_Ons_Success_Percentage          0.009899
-Expected_xAG                         0.009204
-Carries_Into_Penalty_Area            0.008917
-Passes_Into_Penalty_Area             0.008271
-Progression_PrgP                     0.007270
-Per_90_Minutes_Ast                   0.007263
-dtype: float64'''
+Top 40 Features selected by mutual_info:
+['Age', 'Performance_Gls', 'Performance_Ast', 'Expected_xG', 'Expected_xAG', 'Progression_PrgC', 'Progression_PrgP', 'Progression_PrgR', 'Per_90_Minutes_Ast', 'Goals_Against_Per90', 'Save_Percentage', 'CleanSheet_Percentage', 'Total_Passes_Completed_Percentage', 'Medium_Passes_Completed_Percentage', 'Keypasses', 'Passes_Into_Penalty_Area', 'Progressive_Passes', 'Shot_Creating_Actions', 'Goal_Creating_Actions', 'Goal_Creating_Actions_Per90', 'Defensive_Actions_Lost', 'Shots_Blocked', 'Touches_Defensive_Penalty_Area', 'Touches_Mid_3rd', 'Touches_Att_3rd', 'Touches_Att_Pen', 'Take_Ons_Tackled_Percentage', 'Carries', 'Total_Carrying_Distance', 'Progressive_Carrying_Distance', 'Progressive_Carries', 'Carries_Into_Final_Third', 'Carries_Into_Penalty_Area', 'Dispossessions', 'Receiving', 'Progressive_Receiving', 'Fouled', 'Offsides', 'Crosses', 'Recoveries']
 
-'''Linear Regression Results:
+==================================================
+EVALUATION WITH FEATURE SELECTION METHOD: CORRELATION
+==================================================
 
-Train R²: 0.7106 → Test R²: 0.5940 → Moderate performance, serves as a good baseline.
+Linear Regression Results (correlation feature selection):
+Train:
+  R2 Score: 0.6928
+  RMSE: 0.4161
+  MAE: 0.3334
+  Spearman: 0.8352
+Test:
+  R2 Score: 0.6654
+  RMSE: 0.4632
+  MAE: 0.3826
+  Spearman: 0.7997
 
-Spearman correlation is decent but lower than others.
+Top 40 Features selected by correlation:
+['Age', 'Matches', 'Playing_Time_Starts', 'Minutes', 'Performance_Gls', 'Performance_Ast', 'Expected_xG', 'Expected_xAG', 'Progression_PrgC', 'Progression_PrgP', 'Progression_PrgR', 'Per_90_Minutes_Gls', 'Per_90_Minutes_Ast', 'Per_90_Minutes_xG', 'Per_90_Minutes_xAG', 'Shots_On_Target_Per90', 'Keypasses', 'Passes_Into_Penalty_Area', 'Progressive_Passes', 'Shot_Creating_Actions', 'Shot_Creating_Actions_Per90', 'Goal_Creating_Actions', 'Goal_Creating_Actions_Per90', 'Passes_Blocked', 'Touches', 'Touches_Att_3rd', 'Touches_Att_Pen', 'Take_Ons_Attempted', 'Carries', 'Total_Carrying_Distance', 'Progressive_Carrying_Distance', 'Progressive_Carries', 'Carries_Into_Final_Third', 'Carries_Into_Penalty_Area', 'Miscontrols', 'Dispossessions', 'Receiving', 'Progressive_Receiving', 'Fouled', 'Recoveries']
 
-Gradient Boosting Results:
+Gradient Boosting Results (correlation feature selection):
+Train:
+  R2 Score: 0.8129
+  RMSE: 0.3248
+  MAE: 0.2472
+  Spearman: 0.8986
+Test:
+  R2 Score: 0.7112
+  RMSE: 0.4303
+  MAE: 0.3564
+  Spearman: 0.8170
 
-Best overall performance on test set across all 4 metrics (R², RMSE, MAE, Spearman).
+Top 40 Features selected by correlation:
+['Age', 'Matches', 'Playing_Time_Starts', 'Minutes', 'Performance_Gls', 'Performance_Ast', 'Expected_xG', 'Expected_xAG', 'Progression_PrgC', 'Progression_PrgP', 'Progression_PrgR', 'Per_90_Minutes_Gls', 'Per_90_Minutes_Ast', 'Per_90_Minutes_xG', 'Per_90_Minutes_xAG', 'Shots_On_Target_Per90', 'Keypasses', 'Passes_Into_Penalty_Area', 'Progressive_Passes', 'Shot_Creating_Actions', 'Shot_Creating_Actions_Per90', 'Goal_Creating_Actions', 'Goal_Creating_Actions_Per90', 'Passes_Blocked', 'Touches', 'Touches_Att_3rd', 'Touches_Att_Pen', 'Take_Ons_Attempted', 'Carries', 'Total_Carrying_Distance', 'Progressive_Carrying_Distance', 'Progressive_Carries', 'Carries_Into_Final_Third', 'Carries_Into_Penalty_Area', 'Miscontrols', 'Dispossessions', 'Receiving', 'Progressive_Receiving', 'Fouled', 'Recoveries']
 
-Slight overfitting (Train R² 0.8324 → Test R² 0.6958), but still acceptable.
+Random Forest Results (correlation feature selection):
+Train:
+  R2 Score: 0.7515
+  RMSE: 0.3743
+  MAE: 0.2972
+  Spearman: 0.8657
+Test:
+  R2 Score: 0.6496
+  RMSE: 0.4740
+  MAE: 0.3837
+  Spearman: 0.7841
 
-Highest Spearman correlation, indicating the best ability to rank players.
+Top 40 Features selected by correlation:
+['Age', 'Matches', 'Playing_Time_Starts', 'Minutes', 'Performance_Gls', 'Performance_Ast', 'Expected_xG', 'Expected_xAG', 'Progression_PrgC', 'Progression_PrgP', 'Progression_PrgR', 'Per_90_Minutes_Gls', 'Per_90_Minutes_Ast', 'Per_90_Minutes_xG', 'Per_90_Minutes_xAG', 'Shots_On_Target_Per90', 'Keypasses', 'Passes_Into_Penalty_Area', 'Progressive_Passes', 'Shot_Creating_Actions', 'Shot_Creating_Actions_Per90', 'Goal_Creating_Actions', 'Goal_Creating_Actions_Per90', 'Passes_Blocked', 'Touches', 'Touches_Att_3rd', 'Touches_Att_Pen', 'Take_Ons_Attempted', 'Carries', 'Total_Carrying_Distance', 'Progressive_Carrying_Distance', 'Progressive_Carries', 'Carries_Into_Final_Third', 'Carries_Into_Penalty_Area', 'Miscontrols', 'Dispossessions', 'Receiving', 'Progressive_Receiving', 'Fouled', 'Recoveries']
 
-Random Forest Results:
+'''
 
-Lower test performance than Gradient Boosting.
+'''1. Why were these features chosen?
+a. Feature Selection Criteria:
 
-Slight underfitting (Train R² 0.7640 and Test R² 0.6661 both relatively lower).
+Practical Significance: Selected metrics that directly influence player value:
 
-Lower Spearman than GBM.'''
+Attack: Goals (Gls), Expected Goals (xG), Assists (Ast), Shots on Target
 
-'''Final Choice: Gradient Boosting Regressor
-Because it:
+Creativity: Key Passes, Progressive Passes, Expected Assists (xA)
 
-Achieves the best test performance.
+Defense: Tackles, Interceptions, Clean Sheets (for goalkeepers/defenders)
 
-Has the highest ranking ability (Spearman correlation).
+Physicality/Versatility: Distance Covered, Age
 
-Is not severely overfitting or underfitting.'''
+b. Feature Selection Methods:
+
+Filter Methods (Mutual Info/Correlation):
+
+Mutual Information: Selects non-linear features (suitable for GBM/RF)
+
+python
+SelectKBest(score_func=mutual_info_regression, k=40)
+Correlation (F-test): Selects linear features (suitable for Linear Regression)
+
+python
+SelectKBest(score_func=f_regression, k=40)
+Reasons:
+
+Faster than wrapper methods (e.g., RFE) with many features
+
+Model-agnostic → More objective
+
+c. Example of Key Features:
+
+Feature	Importance (GBM)	Explanation
+Age	0.45	Younger age → Higher potential
+Expected_xG	0.35	Realistic goal-scoring ability
+Progressive Passes	0.28	Ability to advance playmaking
+Tackles	0.15	Defensive contribution (for defenders)
+2. Why Choose Gradient Boosting (GBM)?
+a. Comparison with Other Models:
+
+Model	Pros	Cons	Test R²
+Gradient Boosting	- Captures complex non-linear relationships
+- Accurate ranking (Spearman > 0.8)	- Requires careful tuning
+- Slower than Random Forest	0.71
+Random Forest	- Low tuning needs
+- Handles overfitting well	- Less effective with continuous features	0.65
+Linear Regression	- Simple, interpretable	- Misses non-linear relationships	0.59
+b. Reasons for GBM:
+
+Football data is non-linear:
+
+Relationships (e.g., between xG and value) are not straight lines
+
+GBM captures this via sequential decision trees
+
+Diverse features:
+
+Handles both numerical (age, goals) and categorical (encoded positions)
+
+High Spearman score (0.81):
+
+Critical for accurate player value ranking
+
+c. Optimized GBM Parameters:
+
+python
+GradientBoostingRegressor(
+    n_estimators=300,   # Sufficient trees for convergence
+    learning_rate=0.09, # Small learning rate to avoid overfitting
+    max_depth=3,        # Limits tree depth
+    subsample=0.7,      # Uses 70% data per tree → Increases diversity
+    random_state=0      # Ensures reproducibility
+)'''
