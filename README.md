@@ -17,4 +17,4 @@ Problem IV.a: 'final_players_with_etv.csv' and Problem IV.py
 Problem IV.b:  newww.py and 'results_with_etv.csv'
               Problem IV.B.py 
 
-REPORT: BAO_CAO_BAI_TAP_LON_PYTHON.tex and BAO_CAO_BAI_TAP_LON_PYTHON-latex.pdf
+REPORT: BAO_CAO_BAI_TAP_LON_PYTHON.tex and PYTHON_REPORT.pdf
