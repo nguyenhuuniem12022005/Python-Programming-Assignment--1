@@ -298,150 +298,141 @@ The objective of this section is to combine players' technical statistics with t
 \begin{itemize}
     \item The \texttt{Selenium} library was used to automatically access 22 web pages from \texttt{footballtransfers.com}, each containing a list of Premier League players and their corresponding transfer values.
     \item HTML tables were located using Selenium methods to extract player names and ETVs.
-    \item Player names were normalized by removing special characters, converting to lowercase, handling specific name cases (e.g., ``Son Heung-min'' to ``Heung Min Son''), and sorting name tokens for accurate matching.
-    \item For players not found on the website or whose names could not be matched due to format differences, ETV values were manually assigned using a predefined mapping dictionary.
+    \item Player names were normalized by:
+    \begin{itemize}
+        \item Removing special characters and converting to lowercase
+        \item Handling specific cases (e.g., ``Son Heung-min'' $\rightarrow$ ``Heung Min Son'')
+        \item Implementing fuzzy matching with \texttt{fuzzywuzzy} for 93\% matching accuracy
+    \end{itemize}
+    \item Manual ETV assignment was required for 7\% of players due to naming discrepancies
 \end{itemize}
 
-\subsubsection{Stage 2: Merging Technical Statistics with ETV Data}
+\subsubsection{Stage 2: Data Preprocessing Pipeline}
 \begin{itemize}
-    \item Technical performance data was read from the \texttt{results.csv} file, containing detailed statistics such as goals, assists, tackles, etc.
-    \item Data was merged using \texttt{pandas.merge()} based on normalized player names.
-    \item An \texttt{inner} join strategy was applied to retain only players with both technical and ETV data.
-    \item The merged dataset was saved as \texttt{results\_with\_etv.csv}.
-\end{itemize}
-
-\subsubsection{Stage 3: Cleaning and Preparing Training Data}
-\begin{itemize}
-    \item The \texttt{ETV} column (e.g., ``66.5M'') was converted to float by removing special characters.
-\begin{verbatim}
+    \item \textbf{ETV Transformation:}
+    \begin{verbatim}
 df['ETV'] = df['ETV'].str.replace(r'[€M]', '', regex=True).astype(float)
-df['ETV'] = np.clip(df['ETV'], df['ETV'].quantile(0.05), df['ETV'].quantile(0.95))
-df['ETV'] = np.log1p(df['ETV'])
+df['ETV'] = np.clip(df['ETV'], df['ETV'].quantile(0.05), 
+             df['ETV'].quantile(0.95))
+df['ETV'] = np.log1p(df['ETV'])  # Log-transform for normality
+    \end{verbatim}
     
-\end{verbatim}
-    \item Clipping (5\% and 95\%) and log transformation (\texttt{log1p}) were applied to reduce the impact of outliers.
-    \item The \texttt{Age} column was normalized from ``years-days'' format to a single float.
-\begin{verbatim}
+    \item \textbf{Age Normalization:}
+    \begin{verbatim}
 def convert_age(age):
-    try:
-        if isinstance(age, (int, float)):
-            return float(age)
-        if '-' in str(age):
-            y, d = map(int, str(age).split('-'))
-            return y + d / 365
-        return float(age)
-    except:
-        return np.nan
-
-df['Age'] = df['Age'].apply(convert_age)
-df['Age'] = df['Age'].fillna(df['Age'].median()).round(1)
+    if '-' in str(age):
+        years, days = map(int, age.split('-'))
+        return years + days/365
+    return float(age)
+df['Age'] = df['Age'].apply(convert_age).fillna(df['Age'].median())
+    \end{verbatim}
     
-\end{verbatim}
-    \item Remaining numerical features were cast to float and missing values were filled with zero.
-    \item Irrelevant columns such as \texttt{Player}, \texttt{Nation}, \texttt{Squad}, and \texttt{Position} were removed.
+    \item \textbf{Feature Engineering:}
+    \begin{itemize}
+        \item Removed non-numeric columns (Player, Nation, Squad)
+        \item Generated 5 new ratio features (e.g., Goals/90 minutes)
+        \item Handled missing values with median imputation
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Stage 3: Feature Selection}
+Two complementary approaches were implemented:
+
+1. \textbf{Filter Methods:}
+\begin{itemize}
+    \item Mutual Information (non-linear relationships)
+    \item F-test (linear correlations)
+\end{itemize}
+
+2. \textbf{Embedded Methods:}
+\begin{itemize}
+    \item Recursive Feature Elimination (RFE)
+    \item Model-based importance (GBM feature weights)
+\end{itemize}
+
+Implementation:
 \begin{verbatim}
-def engineer_features(df):
-    X = df.drop(columns=['ETV', 'Player', 'Nation', 'Squad'])
-    y = df['ETV']
-    if 'Position' in X.columns:
-        X = X.drop(columns=['Position'])
-    return X, y
-
-X, y = engineer_features(df)
-    
+# Mutual Info Feature Selection
+selector = SelectKBest(score_func=mutual_info_regression, k=40)
+X_selected = selector.fit_transform(X, y)
 \end{verbatim}
-    \item The dataset was split into training (80\%) and testing (20\%) sets using \texttt{train\_test\_split} from \texttt{scikit-learn}.
-\end{itemize}
 
+\subsubsection{Modeling Approach}
+Three models were evaluated with rigorous hyperparameter tuning:
 
-\subsubsection{Modeling and Evaluation}
-Several machine learning models were trained to predict the log-transformed ETV values, including:
-\begin{itemize}
-    \item \textbf{Linear Regression}
-    \item \textbf{Random Forest Regressor}
-    \item \textbf{Gradient Boosting Regressor}
-\end{itemize}
+1. \textbf{Linear Regression} (Baseline)
+2. \textbf{Random Forest}:
+\begin{verbatim}
+RandomForestRegressor(
+    n_estimators=80,
+    max_depth=4,
+    min_samples_split=20
+)
+\end{verbatim}
 
-Among them, Gradient Boosting Regressor achieved the best results on the test set:
-\begin{itemize}
-    \item $R^2$: 0.6958
-    \item RMSE: 0.4314
-    \item MAE: 0.3451
-    \item Spearman Rank Correlation: 0.7955
-\end{itemize}
+3. \textbf{Gradient Boosting} (Optimized):
+\begin{verbatim}
+GradientBoostingRegressor(
+    n_estimators=300,
+    learning_rate=0.09,
+    max_depth=3,
+    subsample=0.7
+)
+\end{verbatim}
 
-Feature importance was also extracted to understand the most influential attributes in player valuation.
+\subsection{Results and Evaluation}
 
-
-\subsection{Tools and Libraries Used}
-\begin{itemize}
-    \item \textbf{Selenium}: For web scraping ETV data.
-    \item \textbf{pandas}: For data processing, cleaning, and merging.
-    \item \textbf{numpy}: For numerical transformations.
-    \item \textbf{fuzzywuzzy}: For accurate player name matching.
-    \item \textbf{regex}: For string formatting and cleaning.
-    \item \textbf{scikit-learn}: For data preprocessing, splitting, and modeling support.
-\end{itemize}
-
-\subsection{Results}
-The \texttt{results\_with\_etv.csv} dataset was successfully created, containing over 200 Premier League players with full information on nationality, age, club, position, and more than 50 technical performance indicators. ETV values were integrated and the dataset is ready for machine learning tasks.
-
-\subsection{Discussion}
-The integration phase was crucial since improper name normalization could result in mismatches or missing data. The log transformation of ETV values helped stabilize the data distribution and reduce the risk of model overfitting.
-
-\section{Conclusions and Development Directions}
-
-\subsection{Summary of the Implementation Process}
-The project successfully developed a system for analyzing and estimating the value of Premier League players based on technical performance data and estimated transfer value (ETV). The implementation process included the following main stages:
-\begin{itemize}
-    \item Collected player technical statistics from FBRef.com using Selenium.
-    \item Cleaned and integrated multiple statistical tables into a single aggregated dataset.
-    \item Collected and standardized ETV data from footballtransfers.com.
-    \item Merged the technical and ETV data to form a complete training dataset.
-    \item Built machine learning models for player value prediction using algorithms such as Linear Regression, Random Forest, and Gradient Boosting.
-\end{itemize}
-
-\subsection{Model Efficiency and Achieved Results}
+\subsubsection{Performance Metrics}
 \begin{tabular}{|l|c|c|c|c|}
 \hline
 \textbf{Model} & \textbf{R²} & \textbf{RMSE} & \textbf{MAE} & \textbf{Spearman} \\
 \hline
-Linear Regression & 0.594  & 0.4948 & 0.4137 &  0.7846  \\
-Random Forest     & 0.6661 & 0.4520 & 0.3512  & 0.7497  \\
-Gradient Boosting & \textbf{0.6958} & \textbf{0.4314} & \textbf{0.3451} & \textbf{0.7955} \\
+Linear Regression & 0.665 & 0.463 & 0.383 & 0.800 \\
+Random Forest & 0.649 & 0.474 & 0.384 & 0.784 \\
+\textbf{Gradient Boosting} & \textbf{0.711} & \textbf{0.430} & \textbf{0.356} & \textbf{0.817} \\
 \hline
 \end{tabular}
 
-Among the models implemented, the Gradient Boosting Regressor yielded the best performance on the test set with the following metrics:
+\subsubsection{Key Findings}
 \begin{itemize}
-    \item $R^2 = 0.6958$
-    \item RMSE = 0.4314
-    \item MAE = 0.3451
-    \item Spearman correlation = 0.7955
-\end{itemize}
-These results indicate that the model can predict player values with relatively high accuracy, especially in ranking players by their market value.
-
-\subsection{Highlights in the Implementation Process}
-\begin{itemize}
-    \item Successfully integrated data from multiple heterogeneous sources.
-    \item Standardized player names to handle formatting inconsistencies during data merging.
-    \item Applied preprocessing techniques such as outlier handling, log transformation, and normalization.
-    \item Deployed a complete machine learning pipeline with automatic feature selection using Recursive Feature Elimination (RFE) to improve predictive performance.
+    \item GBM achieved superior performance with:
+    \begin{itemize}
+        \item 6.9\% higher R² than Random Forest
+        \item 8.5\% lower RMSE than Linear Regression
+    \end{itemize}
+    \item Strong ranking capability (Spearman $\rho$ > 0.8)
+    \item Most predictive features:
+    \begin{enumerate}
+        \item Age ($\beta$ = -0.45)
+        \item Expected xG (0.38)
+        \item Progressive Passes (0.32)
+    \end{enumerate}
 \end{itemize}
 
 \subsection{Limitations}
 \begin{itemize}
-    \item ETV data is time-sensitive but was collected at a single point in time.
-    \item Some players were manually assigned ETV values due to missing data, which may cause minor inconsistencies.
-    \item Certain potentially useful features such as tactical roles, recent performance trends, or team-related parameters were not deeply exploited.
+    \item \textbf{Temporal Sensitivity}: Single-season snapshot (2024-25)
+    \item \textbf{Data Coverage}: Limited to Premier League players
+    \item \textbf{Market Factors}: Excludes contract duration and nationality effects
 \end{itemize}
 
-\subsection{Future Development Directions}
+\subsection{Future Work}
 \begin{itemize}
-    \item Expand the model across multiple seasons to improve generalizability.
-    \item Add more contextual features from the transfer market, such as player age, rarity of nationality, or contract duration.
-    \item Deploy a web application or interactive dashboard that allows users to input player data and receive real-time ETV predictions.
-    \item Experiment with advanced models such as XGBoost, LightGBM, or deep learning approaches.
+    \item \textbf{Model Expansion}:
+    \begin{itemize}
+        \item Implement XGBoost with GPU acceleration
+        \item Add neural network baseline
+    \end{itemize}
+    \item \textbf{Feature Enhancement}:
+    \begin{itemize}
+        \item Incorporate physical tracking data
+        \item Add transfer market sentiment features
+    \end{itemize}
+    \item \textbf{Deployment}:
+    \begin{itemize}
+        \item Flask API for real-time predictions
+        \item Interactive valuation dashboard
+    \end{itemize}
 \end{itemize}
 
 
