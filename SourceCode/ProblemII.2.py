@@ -1,8 +1,11 @@
 import pandas as pd
 import numpy as np
-
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+csv_path = os.path.join(BASE_DIR, "results.csv")
+output_csv_path = os.path.join(BASE_DIR, "results2.csv")
 # Read the CSV file
-df = pd.read_csv('results.csv')
+df = pd.read_csv(csv_path)
 
 
 # Define a function to convert age strings to numeric values
@@ -82,4 +85,4 @@ def create_stats_table(input_df):
 stats_table = create_stats_table(df)
 
 # Save to CSV with UTF-8 encoding (with BOM for Excel compatibility)
-stats_table.to_csv('results2.csv', index=False, encoding='utf-8-sig')
+stats_table.to_csv(output_csv_path, index=False, encoding='utf-8-sig')
