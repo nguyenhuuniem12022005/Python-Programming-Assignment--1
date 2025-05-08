@@ -1,7 +1,12 @@
 import pandas as pd
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+input_path = os.path.join(BASE_DIR, "best_teams_per_statistic.csv")
+output_stats_path = os.path.join(BASE_DIR, "positive_stats_leaders.csv")
+output_ranking_path = os.path.join(BASE_DIR, "team_rankings_by_positive_stats.csv")
 
 # Load the CSV file
-df = pd.read_csv("best_teams_per_statistic.csv")
+df = pd.read_csv(input_path)
 
 # Define positive and negative metrics (convert all to lowercase)
 positive_keywords = [x.lower() for x in [
@@ -81,7 +86,7 @@ if not ranked_teams.empty:
     print(f"Key strengths: {', '.join(dominant_stats[:5])}... (and {len(dominant_stats) - 5} more stats)")
 
     # Export to CSV
-    result_df.to_csv("positive_stats_leaders.csv", index=False)
-    ranked_teams.to_csv("team_rankings_by_positive_stats.csv", index=True)
+    result_df.to_csv(output_stats_path, index=False)
+    ranked_teams.to_csv(output_ranking_path, index=True)
 else:
     print("No positive stats found in the data.")
