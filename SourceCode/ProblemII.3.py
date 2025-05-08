@@ -1,9 +1,11 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+csv_path = os.path.join(BASE_DIR, "results.csv")
 # Load the data from CSV
-df = pd.read_csv('results.csv')
+df = pd.read_csv(csv_path)
 
 def convert_age(age_str):
     if pd.isna(age_str) or age_str == "N/a":
