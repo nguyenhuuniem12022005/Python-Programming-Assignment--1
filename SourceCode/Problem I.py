@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
@@ -289,7 +290,7 @@ filtered_df = filtered_df.fillna("N/a")
 
 
 # Save to CSV
-output_file = 'results.csv'
+output_file = os.path.join(os.path.dirname(__file__), 'results.csv')
 filtered_df.to_csv(output_file, index=False, encoding='utf-8')
 print(f"\nSuccess! Data saved to {output_file}")
 print("\nColumns in final dataset:")
