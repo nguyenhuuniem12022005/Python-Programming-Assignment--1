@@ -1,8 +1,12 @@
 import pandas as pd
 import numpy as np
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+csv_path = os.path.join(BASE_DIR, "results.csv")
+output_csv_path = os.path.join(BASE_DIR, "best_teams_per_statistic.csv")
+# Read the CSV file
+df = pd.read_csv(csv_path)
 
-# Read data from CSV file
-df = pd.read_csv("results.csv")
 
 
 # Function to convert age strings to numeric values
@@ -54,4 +58,4 @@ result_df = result_df[['Statistic', 'Team', 'Value']]
 result_df.sort_values(by=['Team', 'Statistic'], inplace=True)
 
 # Save results to CSV with UTF-8 encoding
-result_df.to_csv('best_teams_per_statistic.csv', index=False, encoding='utf-8-sig')
+result_df.to_csv(output_csv_path, index=False, encoding='utf-8-sig')
