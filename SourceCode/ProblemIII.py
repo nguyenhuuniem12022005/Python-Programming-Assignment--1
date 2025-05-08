@@ -7,8 +7,11 @@ from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.metrics import silhouette_score
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+csv_path = os.path.join(BASE_DIR, "results.csv")
 #  Read data
-df = pd.read_csv('results.csv')
+df = pd.read_csv(csv_path)
 
 #  Convert 'Age' column from "years-days" string format to float
 def convert_age(age_str):
